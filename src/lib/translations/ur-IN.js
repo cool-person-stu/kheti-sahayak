@@ -143,5 +143,12 @@ export default {
   listen: "سنیں",
   speakToFill: "اسے بھرنے کے لیے بولیں",
   uploadPhotosDesc: "ریکارڈ کے لیے اپنی فصل کی تصاویر اپلوڈ کریں۔",
-  resetProfileBtn: "پروفائل ری سیٹ کریں"
+  resetProfileBtn: "پروفائل ری سیٹ کریں",
+
+  enableLocationPrices: "قریبی منڈیوں کی قیمتیں دیکھنے کے لیے لوکیشن آن کریں",
+  selectCropPrices: "منڈی کے بھاؤ دیکھنے کے لیے فصل منتخب کریں",
+  nearest: "سب سے قریبی",
+  highestPrice: "سب سے زیادہ قیمت",
+  noMandiFound: "اس فصل کے لیے قریب کوئی منڈی نہیں ملی",
+  distance: "فاصلہ"
 }

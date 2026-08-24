@@ -4,7 +4,7 @@ import SunLogo from "../components/SunLogo"
 import LanguagePicker from "../components/LanguagePicker"
 import VoiceInput from "../components/VoiceInput"
 import { useTranslation } from "../lib/useTranslation"
-import { signUp } from "../lib/auth"
+import { signUp, updateCurrentUser } from "../lib/auth"
 
 export default function SignUpPage() {
   const { t } = useTranslation()
@@ -28,12 +28,21 @@ export default function SignUpPage() {
     { q: t("createPassword"), ph: t("passwordPlaceholder"), val: password, set: setPassword },
   ]
 
+  const requestGPS = () => {
+    if (!navigator.geolocation) { navigate("/dashboard"); return }
+    navigator.geolocation.getCurrentPosition(
+      (pos) => { updateCurrentUser({ location: { lat: pos.coords.latitude, lng: pos.coords.longitude } }); navigate("/dashboard") },
+      () => { navigate("/dashboard") },
+      { timeout: 8000 }
+    )
+  }
+
   const next = () => {
     setError("")
     if (step < steps.length - 1) { setStep(step + 1); return }
     const result = signUp({ name, village, crop, landSize, landUnit, phone, password })
     if (result.error) { setError(result.error); return }
-    navigate("/dashboard")
+    requestGPS()
   }
 
   const back = () => { if (step > 0) setStep(step - 1) }

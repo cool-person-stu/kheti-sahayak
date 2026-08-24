@@ -110,7 +110,7 @@ function SmartTab({ farmer, onRefresh }) {
         </CollapsibleSection>
       )}
       <CollapsibleSection title={t("marketPrices")} icon={<div className="w-8 h-8 rounded-full bg-secondary/15 text-warning-content flex items-center justify-center"><svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4Z" /></svg></div>}>
-        <MandiPrices crop={farmer.crop} />
+        <MandiPrices crop={farmer.crop} farmerLocation={farmer.location} />
       </CollapsibleSection>
       <CollapsibleSection title={t("priceComparison")} icon={<div className="w-8 h-8 rounded-full bg-warning/15 text-warning-content flex items-center justify-center"><svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6Z" /></svg></div>}>
         <PriceComparison farmerId={farmer.id} farmerCrop={farmer.crop} />
@@ -260,7 +260,7 @@ function FarmerHome() {
         <div className="space-y-4">
           <AudioText text={t("marketPrices")} as="h2" className="font-display text-2xl font-bold text-neutral" />
           <p className="text-sm text-base-content/60">{t("indicative")}</p>
-          <MandiPrices crop={farmer.crop} />
+          <MandiPrices crop={farmer.crop} farmerLocation={farmer.location} />
           <PriceComparison farmerId={farmer.id} farmerCrop={farmer.crop} />
         </div>
       )}

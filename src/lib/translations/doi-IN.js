@@ -143,5 +143,12 @@ export default {
   listen: "सुणो",
   speakToFill: "ए भरन लई बोलो",
   uploadPhotosDesc: "रिकॉर्ड लई अपनी फसल दी तस्वीरें अपलोड करो।",
-  resetProfileBtn: "प्रोफाइल रीसेट करो"
+  resetProfileBtn: "प्रोफाइल रीसेट करो",
+
+  enableLocationPrices: "नेड़े दी मंडीं दे भाव देखन आस्तै लोकेशन चालू करो",
+  selectCropPrices: "मंडी दे भाव देखन आस्तै फसल चुनो",
+  nearest: "सब्भनें नेड़े",
+  highestPrice: "सब्भनें बड़ा भाव",
+  noMandiFound: "इस फसल आस्तै नेड़े कुएई मंडी नेईं मिल्ली",
+  distance: "दूरी"
 }

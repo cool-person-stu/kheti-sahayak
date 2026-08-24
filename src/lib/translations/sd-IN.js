@@ -143,5 +143,12 @@ export default {
   listen: "ٻڌو",
   speakToFill: "هي ڀرڻ لاءِ ڳالهايو",
   uploadPhotosDesc: "رڪارڊ لاءِ پنهنجي فصل جون تصويرون اپلوڊ ڪريو.",
-  resetProfileBtn: "پروفائل ري سيٽ ڪريو"
+  resetProfileBtn: "پروفائل ري سيٽ ڪريو",
+
+  enableLocationPrices: "ويجهين منڊين جون قيمتون ڏسڻ لاءِ لوڪيشن آن ڪريو",
+  selectCropPrices: "منڊي جا بهاءَ ڏسڻ لاءِ فصل چونڊيو",
+  nearest: "ويجهو ترين",
+  highestPrice: "سڀ کان وڌيڪ قيمت",
+  noMandiFound: "هن فصل لاءِ ويجهو ڪا به منڊي نه ملي",
+  distance: "فاصلو"
 }

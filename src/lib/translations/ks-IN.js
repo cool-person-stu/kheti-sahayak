@@ -143,5 +143,12 @@ export default {
   listen: "أنوو",
   speakToFill: "یہ پُر کرنس خأطرٕ بولِیو",
   uploadPhotosDesc: "ریکارڑ خأطرٕ پننس فصلُک فوٹو اپلوڈ کٔریو۔",
-  resetProfileBtn: "پروفائل ری سیٹ کٔریو"
+  resetProfileBtn: "پروفائل ری سیٹ کٔریو",
+
+  enableLocationPrices: "نزدیکی منڈین ہند قیمتی وُچنہ باپتھ لوکیشن آن کْریو",
+  selectCropPrices: "منڈی ہند بھاو وُچنہ باپتھ فصل ژٔرِو",
+  nearest: "سارِوے کھۆتہ نزدیک",
+  highestPrice: "سارِوے کھۆتہ زیاد قیمت",
+  noMandiFound: "اَمی فصلہ باپتھ نزدیکی کانہ منڈی نِہ میل",
+  distance: "دوٗر"
 }

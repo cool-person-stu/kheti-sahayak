@@ -143,5 +143,12 @@ export default {
   listen: "শুনক",
   speakToFill: "এইটো ভৰাবলৈ কথা কওক",
   uploadPhotosDesc: "ৰেকৰ্ডৰ বাবে আপোনাৰ পেলীৰ ফটো আপল'ড কৰক।",
-  resetProfileBtn: "প্ৰোফাইল ৰিছেট কৰক"
+  resetProfileBtn: "প্ৰোফাইল ৰিছেট কৰক",
+
+  enableLocationPrices: "ওচৰৰ বজাৰৰ দাম চাবলৈ লোকেশ্বন অন কৰক",
+  selectCropPrices: "বজাৰৰ দৰ চাবলৈ শস্য বাছনি কৰক",
+  nearest: "আটাইতকৈ ওচৰৰ",
+  highestPrice: "সৰ্বোচ্চ দাম",
+  noMandiFound: "এই শস্যৰ বাবে ওচৰত কোনো বজাৰ পোৱা নগ'ল",
+  distance: "দূৰত্ব"
 }

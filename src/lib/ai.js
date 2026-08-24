@@ -1,16 +1,12 @@
-const AI_KEY = "kh_ai_key"
+const GEMINI_KEY = "YOUR_GEMINI_API_KEY"
 
 export function getAIKey() {
-  return localStorage.getItem(AI_KEY) || ""
-}
-
-export function setAIKey(key) {
-  localStorage.setItem(AI_KEY, key)
+  return GEMINI_KEY
 }
 
 export async function askAI({ question, farmerData, sensorData, weatherData, cropPricing, language, chatHistory }) {
   const apiKey = getAIKey()
-  if (!apiKey) return { error: "AI key not set" }
+  if (!apiKey || apiKey === "YOUR_GEMINI_API_KEY") return { error: "AI not configured. Please set the Gemini API key in the device settings." }
 
   const systemPrompt = `You are Annadata AI, a helpful farming assistant for Indian farmers. You speak in the farmer's language (${language}). You are warm, practical, and give actionable advice. Always respond in the same language the farmer uses. Keep responses concise but thorough. Use ₹ for currency. Focus on: crop planning, soil health, weather-based advice, market timing, pest management, water management, and government schemes. When data is provided (soil sensors, weather, crop prices), use it to give specific, personalized advice.`
 
@@ -22,7 +18,7 @@ export async function askAI({ question, farmerData, sensorData, weatherData, cro
   }
   if (sensorData) contextParts.push(`Soil Sensor Data:\n${sensorData}`)
   if (weatherData) contextParts.push(`Weather: ${weatherData.temp}°C, ${weatherData.description}, Humidity: ${weatherData.humidity}%, Wind: ${weatherData.windSpeed} km/h`)
-  if (cropPricing) contextParts.push(`Crop pricing: ${cropPricing}`)
+  if (cropPricing) contextParts.push(`Nearby mandi prices: ${cropPricing}`)
 
   const context = contextParts.length > 0 ? `\n\nContext:\n${contextParts.join("\n")}` : ""
 
@@ -62,7 +58,7 @@ export async function askAI({ question, farmerData, sensorData, weatherData, cro
 
 export async function getSmartSuggestions({ farmerData, sensorData, weatherData, cropPricing, language }) {
   return askAI({
-    question: `Based on the provided data, give me 5 specific, actionable recommendations for this farmer. Cover: 1) What crops to plant现在 and when, 2) Soil improvements needed, 3) Water/irrigation advice, 4) Weather-based precautions for the next 2 weeks, 5) Best time to harvest and sell. Be specific with numbers and dates where possible.`,
+    question: `Based on the provided data, give me 5 specific, actionable recommendations for this farmer. Cover: 1) What crops to plant now and when, 2) Soil improvements needed, 3) Water/irrigation advice, 4) Weather-based precautions for the next 2 weeks, 5) Best time to harvest and sell. Be specific with numbers and dates where possible.`,
     farmerData,
     sensorData,
     weatherData,

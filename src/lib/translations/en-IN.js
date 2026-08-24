@@ -223,5 +223,11 @@ export default {
   aiSuggestion2: "How is my soil health?",
   aiSuggestion3: "When should I harvest?",
   goToDashboard: "Go to Dashboard",
-  landingFooter: "Annadata — empowering every Indian farmer with government benefits, smart tools, AI advice, and direct market access. Built for the villages of India."
+  landingFooter: "Annadata — empowering every Indian farmer with government benefits, smart tools, AI advice, and direct market access. Built for the villages of India.",
+  enableLocationPrices: "Enable location to see prices from nearby markets",
+  selectCropPrices: "Select a crop to see market prices",
+  nearest: "Nearest",
+  highestPrice: "Highest Price",
+  noMandiFound: "No nearby markets found for this crop",
+  distance: "Distance"
 }

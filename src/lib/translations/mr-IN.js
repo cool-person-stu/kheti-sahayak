@@ -173,5 +173,12 @@ export default {
   aiPlaceholder:"तुमच्या शेताबद्दल काहीही विचारा...",
   aiSuggestion1:"या हंगामात कोणते पीक लावावे?",
   aiSuggestion2:"माझ्या मातीची प्रकृती कशी आहे?",
-  aiSuggestion3:"मला कधी काढणी करावी?"
+  aiSuggestion3:"मला कधी काढणी करावी?",
+
+  enableLocationPrices: "जवळपासच्या बाजारातील भाव पाहण्यासाठी लोकेशन सुरू करा",
+  selectCropPrices: "बाजारभाव पाहण्यासाठी पीक निवडा",
+  nearest: "सर्वात जवळचे",
+  highestPrice: "सर्वोच्च भाव",
+  noMandiFound: "या पिकासाठी जवळपास कोणतेही बाजार आढळले नाहीत",
+  distance: "अंतर"
 }

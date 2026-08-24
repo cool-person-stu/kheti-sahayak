@@ -173,5 +173,12 @@ export default {
   aiPlaceholder:"మీ పొలం గురించి ఏదైనా అడగండి...",
   aiSuggestion1:"ఈ సీజన్‌లో నేను ఏ పంట నాటాలి?",
   aiSuggestion2:"నా నేల ఆరోగ్యం ఎలా ఉంది?",
-  aiSuggestion3:"నేను ఎప్పుడు కోత చేయాలి?"
+  aiSuggestion3:"నేను ఎప్పుడు కోత చేయాలి?",
+
+  enableLocationPrices: "సమీప మార్కెట్ల ధరలు చూడటానికి లొకేషన్ ఆన్ చేయండి",
+  selectCropPrices: "మార్కెట్ ధరలు చూడటానికి పంటను ఎంచుకోండి",
+  nearest: "సమీపంలోనిది",
+  highestPrice: "అత్యధిక ధర",
+  noMandiFound: "ఈ పంటకు సమీపంలో మార్కెట్లు కనుగొనబడలేదు",
+  distance: "దూరం"
 }

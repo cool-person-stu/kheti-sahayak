@@ -143,5 +143,12 @@ export default {
   listen: "ಕೇಳಿ",
   speakToFill: "ಇದನ್ನು ಭರ್ತಿ ಮಾಡಲು ಮಾತನಾಡಿ",
   uploadPhotosDesc: "ದಾಖಲೆಗಾಗಿ ನಿಮ್ಮ ಬೆಳೆ ಫೋಟೋಗಳನ್ನು ಅಪ್‌ಲೋಡ್ ಮಾಡಿ.",
-  resetProfileBtn: "ಪ್ರೊಫೈಲ್ ರೀಸೆಟ್ ಮಾಡಿ"
+  resetProfileBtn: "ಪ್ರೊಫೈಲ್ ರೀಸೆಟ್ ಮಾಡಿ",
+
+  enableLocationPrices: "ಹತ್ತಿರದ ಮಾರುಕಟ್ಟೆಗಳ ಬೆಲೆಗಳನ್ನು ನೋಡಲು ಸ್ಥಳವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿ",
+  selectCropPrices: "ಮಾರುಕಟ್ಟೆ ಬೆಲೆಗಳನ್ನು ನೋಡಲು ಬೆಳೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ",
+  nearest: "ಹತ್ತಿರದ",
+  highestPrice: "ಅತಿ ಹೆಚ್ಚಿನ ಬೆಲೆ",
+  noMandiFound: "ಈ ಬೆಳೆಗೆ ಹತ್ತಿರದ ಯಾವುದೇ ಮಾರುಕಟ್ಟೆ ಸಿಗಲಿಲ್ಲ",
+  distance: "ದೂರ"
 }

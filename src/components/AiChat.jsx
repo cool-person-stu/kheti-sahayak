@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react"
 import { useLanguage } from "../lib/LanguageContext"
 import { useTranslation } from "../lib/useTranslation"
-import { askAI, getAIKey, setAIKey } from "../lib/ai"
+import { askAI, getAIKey } from "../lib/ai"
 import { getSensorData, getMockSensorData, formatSensorForAI } from "../lib/soilSensor"
 import { getEnvData } from "../lib/store"
 import { getCropPricing } from "../lib/store"
@@ -16,8 +16,6 @@ export default function AiChat({ farmer }) {
   const [messages, setMessages] = useState([])
   const [input, setInput] = useState("")
   const [loading, setLoading] = useState(false)
-  const [showSetup, setShowSetup] = useState(!getAIKey())
-  const [apiKeyInput, setApiKeyInput] = useState("")
   const chatEndRef = useRef(null)
 
   useEffect(() => {
@@ -56,14 +54,7 @@ export default function AiChat({ farmer }) {
     setLoading(false)
   }
 
-  const handleSaveKey = () => {
-    if (apiKeyInput.trim()) {
-      setAIKey(apiKeyInput.trim())
-      setShowSetup(false)
-    }
-  }
-
-  if (showSetup) {
+  if (!getAIKey() || getAIKey() === "YOUR_GEMINI_API_KEY") {
     return (
       <div className="card bg-base-100 border border-base-content/10 p-6 text-center">
         <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
@@ -71,11 +62,7 @@ export default function AiChat({ farmer }) {
         </div>
         <h3 className="font-display text-xl font-bold text-neutral mb-2">{t("aiSetupTitle")}</h3>
         <p className="text-sm text-base-content/60 mb-4">{t("aiSetupDesc")}</p>
-        <div className="flex gap-2 max-w-md mx-auto">
-          <input className="input input-bordered flex-1" value={apiKeyInput} onChange={(e) => setApiKeyInput(e.target.value)} placeholder="Gemini API key" onKeyDown={(e) => e.key === "Enter" && handleSaveKey()} />
-          <button className="btn btn-primary" onClick={handleSaveKey}>{t("save")}</button>
-        </div>
-        <p className="text-xs text-base-content/50 mt-3">{t("aiSetupHint")}</p>
+        <p className="text-xs text-base-content/50">{t("aiSetupHint")}</p>
       </div>
     )
   }

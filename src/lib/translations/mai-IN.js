@@ -143,5 +143,12 @@ export default {
   listen: "सुनू",
   speakToFill: "ई भरबा लेल बोलू",
   uploadPhotosDesc: "रिकर्ड लेल अपन फसल क फोटो अपलोड करू।",
-  resetProfileBtn: "प्रोफाइल रीसेट करू"
+  resetProfileBtn: "प्रोफाइल रीसेट करू",
+
+  enableLocationPrices: "नजदीकक मंडीसभक कीमत देखबाक लेल लोकेशन चालू करू",
+  selectCropPrices: "मंडी कीमत देखबाक लेल फसल चुनू",
+  nearest: "सभसू नजदीक",
+  highestPrice: "सभसू बेसी कीमत",
+  noMandiFound: "ई फसलक लेल नजदीक कोनो मंडी नै भेटल",
+  distance: "दूरी"
 }

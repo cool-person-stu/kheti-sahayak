@@ -172,5 +172,12 @@ export default {
   aiPlaceholder:"আপনার খামার সম্পর্কে যা খুশি জিজ্ঞাসা করুন...",
   aiSuggestion1:"এই মৌসুমে কোন ফসল বুঝব?",
   aiSuggestion2:"আমার মাটির স্বাস্থ্য কেমন?",
-  aiSuggestion3:"কখন ফসল কাটব?"
+  aiSuggestion3:"কখন ফসল কাটব?",
+
+  enableLocationPrices: "কাছাকাছি বাজারের দাম দেখতে লোকেশন চালু করুন",
+  selectCropPrices: "বাজার দর দেখতে ফসল নির্বাচন করুন",
+  nearest: "নিকটতম",
+  highestPrice: "সর্বোচ্চ মূল্য",
+  noMandiFound: "এই ফসলের জন্য কাছাকাছি কোনো বাজার পাওয়া যায়নি",
+  distance: "দূরত্ব"
 }

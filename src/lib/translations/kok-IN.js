@@ -102,5 +102,12 @@ export default {
   aiPlaceholder:"तुमच्या शेताविशीं विचारात...",
   aiSuggestion1:"ह्या हंगामांत खंयचें पीक घेवंक जाय?",
   aiSuggestion2:"म्हजी माती कशी आसा?",
-  aiSuggestion3:"पीक केद्रा कापचें?"
+  aiSuggestion3:"पीक केद्रा कापचें?",
+
+  enableLocationPrices: "लागींच्या बाजारांच्यो किंमती पळोवपाखातीर लोकेशन सुरू करचें",
+  selectCropPrices: "बाजारभाव पळोवपाखातीर पीक वेंचचें",
+  nearest: "सगळ्यांत लागींचें",
+  highestPrice: "सगळ्यांत वयली किंमत",
+  noMandiFound: "ह्या पिकाखातीर लागींचो बाजार मेळ्ळो ना",
+  distance: "अंतर"
 }

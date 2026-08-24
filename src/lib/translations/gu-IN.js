@@ -173,5 +173,12 @@ export default {
   aiPlaceholder:"તમારા ખેતર વિશે કંઈપણ પૂછો...",
   aiSuggestion1:"આ સીઝનમાં કયો પાક વાવવો જોઈએ?",
   aiSuggestion2:"મારી જમીનની તંદુરસ્તી કેવી છે?",
-  aiSuggestion3:"મારે ક્યારે કાપણી કરવી જોઈએ?"
+  aiSuggestion3:"મારે ક્યારે કાપણી કરવી જોઈએ?",
+
+  enableLocationPrices: "નજીકની બજારોના ભાવ જોવા માટે લોકેશન ચાલુ કરો",
+  selectCropPrices: "બજાર ભાવ જોવા માટે પાક પસંદ કરો",
+  nearest: "સૌથી નજીકનું",
+  highestPrice: "સૌથી ઊંચો ભાવ",
+  noMandiFound: "આ પાક માટે નજીકની કોઈ બજાર મળી નથી",
+  distance: "અંતર"
 }

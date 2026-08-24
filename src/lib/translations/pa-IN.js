@@ -144,5 +144,12 @@ export default {
   listen: "ਸੁਣੋ",
   speakToFill: "ਇਹ ਭਰਨ ਲਈ ਬੋਲੋ",
   uploadPhotosDesc: "ਰਿਕਾਰਡ ਲਈ ਆਪਣੀ ਫ਼ਸਲ ਦੀਆਂ ਤਸਵੀਰਾਂ ਅੱਪਲੋਡ ਕਰੋ।",
-  resetProfileBtn: "ਪ੍ਰੋਫਾਈਲ ਰੀਸੈੱਟ ਕਰੋ"
+  resetProfileBtn: "ਪ੍ਰੋਫਾਈਲ ਰੀਸੈੱਟ ਕਰੋ",
+
+  enableLocationPrices: "ਨੇੜਲੀਆਂ ਮੰਡੀਆਂ ਦੇ ਭਾਅ ਦੇਖਣ ਲਈ ਲੋਕੇਸ਼ਨ ਚਾਲੂ ਕਰੋ",
+  selectCropPrices: "ਮੰਡੀ ਭਾਅ ਦੇਖਣ ਲਈ ਫ਼ਸਲ ਚੁਣੋ",
+  nearest: "ਸਭ ਤੋਂ ਨੇੜਲੀ",
+  highestPrice: "ਸਭ ਤੋਂ ਵੱਧ ਭਾਅ",
+  noMandiFound: "ਇਸ ਫ਼ਸਲ ਲਈ ਨੇੜਲੀ ਕੋਈ ਮੰਡੀ ਨਹੀਂ ਮਿਲੀ",
+  distance: "ਦੂਰੀ"
 }

@@ -143,5 +143,12 @@ export default {
   listen: "सुन्नुहोस्",
   speakToFill: "यो भर्न बोल्नुहोस्",
   uploadPhotosDesc: "रेकर्डका लागि आफ्नो बालीका फोटो अपलोड गर्नुहोस्।",
-  resetProfileBtn: "प्रोफाइल रिसेट गर्नुहोस्"
+  resetProfileBtn: "प्रोफाइल रिसेट गर्नुहोस्",
+
+  enableLocationPrices: "नजिकका बजारका मूल्य हेर्न लोकेशन खोल्नुहोस्",
+  selectCropPrices: "बजार मूल्य हेर्न बाली छान्नुहोस्",
+  nearest: "नजिकको",
+  highestPrice: "उच्चतम मूल्य",
+  noMandiFound: "यो बालीका लागि नजिकै कुनै बजार भेटिएन",
+  distance: "दूरी"
 }

@@ -102,5 +102,12 @@ export default {
   aiPlaceholder:"नों गोनाय बारें जेब्ला सोलाय...",
   aiSuggestion1:"बे हाबिलाव मों केय फसल फोखापो?",
   aiSuggestion2:"मों माटि सास्थ्य केनो दं?",
-  aiSuggestion3:"मों गोनाय केब्ला काटो?"
+  aiSuggestion3:"मों गोनाय केब्ला काटो?",
+
+  enableLocationPrices: "गाबग्रां गासैबोनि दाम मोनथिनो लोकेशन ऑन करनो",
+  selectCropPrices: "मार्केटनि दाम मोनथिनो फिसा सायखनो",
+  nearest: "सब्बै गिबुन",
+  highestPrice: "सब्बै गोसार दाम",
+  noMandiFound: "बे फिसानि थांबाय गाबग्रां गासैबो मोनाखै",
+  distance: "गोजानसालि"
 }

@@ -104,5 +104,12 @@ export default {
   aiPlaceholder:"ᱟᱞᱚᱢ ᱪᱟᱥ ᱵᱟᱵᱚᱛ ᱠᱩᱠᱞᱤ...",
   aiSuggestion1:"ᱱᱚᱣᱟ ᱨᱤᱛᱩ ᱚᱠᱟ ᱨᱚᱱᱚ ᱨᱚᱯᱚᱪᱚᱭ?",
   aiSuggestion2:"ᱤᱧᱟᱜ ᱢᱟᱹᱴᱤ ᱦᱟᱞᱚᱛ ᱪᱮᱠᱟ?",
-  aiSuggestion3:"ᱨᱚᱱᱚ ᱚᱠᱚᱭ ᱟᱹᱠᱷᱨᱤᱧ?"
+  aiSuggestion3:"ᱨᱚᱱᱚ ᱚᱠᱚᱭ ᱟᱹᱠᱷᱨᱤᱧ?",
+
+  enableLocationPrices: "ᱥᱩᱨ ᱥᱩᱯᱩᱨ ᱵᱟᱡᱟᱨ ᱨᱮᱭᱟᱜ ᱫᱟᱢ ᱧᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱞᱚᱠᱮᱥᱚᱱ ᱪᱷᱚᱭᱮ ᱢᱮ",
+  selectCropPrices: "ᱵᱟᱡᱟᱨ ᱨᱮᱭᱟᱜ ᱫᱟᱢ ᱧᱮᱞ ᱞᱟᱹᱜᱤᱫ ᱪᱟᱥ ᱵᱟᱪᱷᱚᱱ ᱢᱮ",
+  nearest: "ᱥᱩᱨ ᱥᱩᱯᱩᱨ",
+  highestPrice: "ᱡᱚᱛᱚ ᱠᱷᱚᱱ ᱰᱷᱮᱨ ᱫᱟᱢ",
+  noMandiFound: "ᱱᱚᱶᱟ ᱪᱟᱥ ᱞᱟᱹᱜᱤᱫ ᱥᱩᱨ ᱵᱟᱡᱟᱨ ᱵᱟᱝ ᱧᱟᱢ ᱮᱱᱟ",
+  distance: "ᱥᱟᱺᱜᱤᱧ"
 }

@@ -142,5 +142,12 @@ export default {
   listen: "ଶୁଣନ୍ତୁ",
   speakToFill: "ଏହା ପୂରଣ କରିବାକୁ କୁହନ୍ତୁ",
   uploadPhotosDesc: "ରେକର୍ଡ ପାଇଁ ଆପଣଙ୍କ ଫସଲ ଫୋଟୋ ଅପଲୋଡ୍ କରନ୍ତୁ।",
-  resetProfileBtn: "ପ୍ରୋଫାଇଲ୍ ରିସେଟ୍"
+  resetProfileBtn: "ପ୍ରୋଫାଇଲ୍ ରିସେଟ୍",
+
+  enableLocationPrices: "ନିକଟତମ ବଜାରର ମୂଲ୍ୟ ଦେଖିବା ପାଇଁ ଲୋକେସନ୍ ଚାଲୁ କରନ୍ତୁ",
+  selectCropPrices: "ବଜାର ମୂଲ୍ୟ ଦେଖିବା ପାଇଁ ଫସଲ ବାଛନ୍ତୁ",
+  nearest: "ନିକଟତମ",
+  highestPrice: "ସର୍ବୋଚ୍ଚ ମୂଲ୍ୟ",
+  noMandiFound: "ଏହି ଫସଲ ପାଇଁ ନିକଟରେ କୌଣସି ବଜାର ମିଳିଲା ନାହିଁ",
+  distance: "ଦୂରତା"
 }

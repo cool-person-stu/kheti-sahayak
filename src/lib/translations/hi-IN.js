@@ -221,5 +221,12 @@ export default {
   aiPlaceholder: "अपने खेत के बारे में कुछ भी पूछें...",
   aiSuggestion1: "इस सीज़न में कौन सी फसल बोऊँ?",
   aiSuggestion2: "मेरी मिट्टी की सेहत कैसी है?",
-  aiSuggestion3: "मुझे कब कटाई करनी चाहिए?"
+  aiSuggestion3: "मुझे कब कटाई करनी चाहिए?",
+
+  enableLocationPrices: "पास की मंडियों से कीमतें देखने के लिए लोकेशन चालू करें",
+  selectCropPrices: "मंडी के भाव देखने के लिए फसल चुनें",
+  nearest: "नज़दीकी",
+  highestPrice: "सबसे ऊँचा भाव",
+  noMandiFound: "इस फसल के लिए पास की कोई मंडी नहीं मिली",
+  distance: "दूरी"
 }
