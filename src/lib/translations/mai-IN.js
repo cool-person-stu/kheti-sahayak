@@ -1,5 +1,5 @@
 export default {
-  appName:"कृति सहायक",tagline:"हर किसान क हर सुविधा मिलल चाही",welcome:"स्वागत अछि",
+  appName:"अन्नदाता",tagline:"हर किसान क हर सुविधा मिलल चाही",welcome:"स्वागत अछि",
   setupTitle:"आपन प्रोफाइल सेट करू",setupDesc:"हमरा के आपन बारे में बताउ ताकि सही सुविधा खोजल जा सके।",
   nameLabel:"आपन नाम",namePlaceholder:"जइसे रमेश कुमार",villageLabel:"आपन गाँव",
   villagePlaceholder:"जइसे शेखपुरा",cropLabel:"अहाँ के उगाउँछी?",

@@ -1,5 +1,5 @@
 export default {
-  appName:"কৃতি সহায়ক",tagline:"প্রতিটি কৃষকের অধিকার আছে প্রতিটি সুবিধার",welcome:"স্বাগতম",
+  appName:"আন্নদাতা",tagline:"প্রতিটি কৃষকের অধিকার আছে প্রতিটি সুবিধার",welcome:"স্বাগতম",
   setupTitle:"আপনার প্রোফাইল তৈরি করুন",setupDesc:"আমাদের আপনার সম্পর্কে বলুন যাতে আমরা সঠিক সুবিধা খুঁজে পাই।",
   nameLabel:"আপনার নাম",namePlaceholder:"যেমন রমেশ কুমার",villageLabel:"আপনার গ্রাম",
   villagePlaceholder:"যেমন শেখপুরা",cropLabel:"আপনি কী ফসল ফেলেন?",

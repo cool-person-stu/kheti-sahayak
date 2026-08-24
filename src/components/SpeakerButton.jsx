@@ -1,15 +1,17 @@
 import { useState } from "react"
 import { useLanguage } from "../lib/LanguageContext"
 import { useTranslation } from "../lib/useTranslation"
+import { isSpeechOutputSupported } from "../lib/languages"
 
 export default function SpeakerButton({ text, label, className = "" }) {
   const { lang } = useLanguage()
   const { t } = useTranslation()
   const [speaking, setSpeaking] = useState(false)
   const btnLabel = label || t("readAloud")
+  const supported = isSpeechOutputSupported(lang)
 
   const speak = () => {
-    if (!("speechSynthesis" in window)) return
+    if (!("speechSynthesis" in window) || !supported) return
     if (speaking) {
       window.speechSynthesis.cancel()
       setSpeaking(false)
@@ -23,6 +25,10 @@ export default function SpeakerButton({ text, label, className = "" }) {
     utterance.onerror = () => setSpeaking(false)
     setSpeaking(true)
     window.speechSynthesis.speak(utterance)
+  }
+
+  if (!supported) {
+    return null
   }
 
   return (

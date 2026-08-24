@@ -1,5 +1,5 @@
 export default {
-  appName:"కృతి సహాయక్",tagline:"ప్రతి రైతుకు ప్రతి సౌకర్యం అందాలి",welcome:"స్వాగతం",
+  appName:"అన్నదాత",tagline:"ప్రతి రైతుకు ప్రతి సౌకర్యం అందాలి",welcome:"స్వాగతం",
   setupTitle:"మీ ప్రొఫైల్ సెట్ చేయండి",setupDesc:"మాకు మీ గురించి చెప్పండి తద్వారా సరైన సౌకర్యాలు కనుగొనగలం।",
   nameLabel:"మీ పేరు",namePlaceholder:"ఉదా. రమేష్ కుమార్",villageLabel:"మీ గ్రామం",
   villagePlaceholder:"ఉదా. శేఖ్‌పురా",cropLabel:"మీరు ఏమి పండిస్తారు?",

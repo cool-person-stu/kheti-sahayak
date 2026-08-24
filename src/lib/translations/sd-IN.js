@@ -1,5 +1,5 @@
 export default {
-  appName:"ڪريتي سهاياڪ",tagline:"هر ڪسان کي هر سهولت مليڇي",welcome:"خوش آمدڙ",
+  appName:"انن داتا",tagline:"هر ڪسان کي هر سهولت مليڇي",welcome:"خوش آمدڙ",
   setupTitle:"پنھو پروفايل سيٽ ڪريو",setupDesc:"اسان کي پنھ rahats بaterno تهان صحيح سهولت ڳولھي سکيون.",
   lastName:"توھان جو نالو",namePlaceholder:"جئن رميش ڪمار",villageLabel:"توھان جو ڳاڻو",
   villagePlaceholder:"جئن شيخ پورا",cropLabel:"توھان ڪيا ڦيرو ڇڏيو ٿا؟",

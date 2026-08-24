@@ -1,5 +1,5 @@
 export default {
-  appName:"कृती सहायक",tagline:"प्रत्येक शेतकऱ्याला प्रत्येक सुविधा मिळावी",welcome:"स्वागत आहे",
+  appName:"अन्नदाता",tagline:"प्रत्येक शेतकऱ्याला प्रत्येक सुविधा मिळावी",welcome:"स्वागत आहे",
   setupTitle:"तुमचा प्रोफाइल सेट करा",setupDesc:"तुमच्याबद्दल आम्हाला सांगा जेणेकरून योग्य सुविधा शोधता येतील.",
   nameLabel:"तुमचे नाव",namePlaceholder:"उदा. रमेश कुमार",villageLabel:"तुमचे गाव",
   villagePlaceholder:"उदा. शेखपुरा",cropLabel:"तुम्ही काय पिक घेता?",

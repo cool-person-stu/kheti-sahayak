@@ -1,5 +1,5 @@
 export default {
-  appName:"کرتی سہایک",tagline:"ہر کسان کو ہر سہولت ملنی چاہیے",welcome:"خوش آمدید",
+  appName:"انن داتا",tagline:"ہر کسان کو ہر سہولت ملنی چاہیے",welcome:"خوش آمدید",
   setupTitle:"اپنا پروفائل بنائیں",setupDesc:"ہمیں اپنے بارے میں بتائیں تاکہ ہم صحیح سہولتیں تلاش کر سکیں۔",
   nameLabel:"آپ کا نام",namePlaceholder:"جیسے رمیش کمار",villageLabel:"آپ کا گاؤں",
   villagePlaceholder:"جیسے شیخ پورا",cropLabel:"آپ کیا اگاتے ہیں؟",

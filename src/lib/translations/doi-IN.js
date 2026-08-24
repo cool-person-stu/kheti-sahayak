@@ -1,5 +1,5 @@
 export default {
-  appName:"कृति सहायक",tagline:"हर किसान ने हर सुविधा मिलनी चाहिए",welcome:"स्वागत है",
+  appName:"अन्नदाता",tagline:"हर किसान ने हर सुविधा मिलनी चाहिए",welcome:"स्वागत है",
   setupTitle:"अपना प्रोफाइल सेट करो",setupDesc:"सानू अपने बारे दस्सो तां जो सही सुविधा लब्भ सके।",
   nameLabel:"थां दा नाम",namePlaceholder:"जिवैं रमेश कुमार",villageLabel:"थां दा पिंड",
   villagePlaceholder:"जिवैं शेखपुरा",cropLabel:"तुसीं की उगाउंदे हो?",

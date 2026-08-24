@@ -1,5 +1,5 @@
 export default {
-  appName:"কৃতি সহায়ক",tagline:"প্ৰতিটো চাষীয়ে প্ৰতিটো সুবিধা পাব লাগে",welcome:"স্বাগতম",
+  appName:"অন্নদাতা",tagline:"প্ৰতিটো চাষীয়ে প্ৰতিটো সুবিধা পাব লাগে",welcome:"স্বাগতম",
   setupTitle:"আপোনাৰ প্ৰোফাইল সংহতি কৰক",setupDesc:"আমাক আপোনাৰ বিষয়ে কওক যাতে সঠিক সুবিধা পোৱা যায়।",
   nameLabel:"আপোনাৰ নাম",namePlaceholder:"যেনে রমেশ কুমার",villageLabel:"আপোনাৰ গাঁও",
   villagePlaceholder:"যেনে শেখপুৰা",cropLabel:"আপুনি কি খেতি কৰে?",

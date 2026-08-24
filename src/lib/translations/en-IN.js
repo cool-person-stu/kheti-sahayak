@@ -1,5 +1,5 @@
 export default {
-  appName: "Kheti Sahayak",
+  appName: "Annadata",
   tagline: "Every farmer deserves every benefit",
   welcome: "Welcome",
   setupTitle: "Set up your profile",

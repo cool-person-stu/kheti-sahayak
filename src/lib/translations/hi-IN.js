@@ -1,5 +1,5 @@
 export default {
-  appName: "कृति सहायक",
+  appName: "अन्नदाता",
   tagline: "हर किसान को हर सुविधा मिलनी चाहिए",
   welcome: "स्वागत है",
   setupTitle: "अपना प्रोफ़ाइल बनाएं",

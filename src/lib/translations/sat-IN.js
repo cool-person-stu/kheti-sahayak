@@ -1,5 +1,5 @@
 export default {
-  appName:"ᱠᱨᱤᱛᱤ ᱥᱟᱦᱟᱭᱚᱠ",tagline:"ᱢᱮᱞ ᱨᱟᱹᱞᱮᱭᱟᱜ ᱥᱚ ᱠᱚ ᱢᱮᱞ ᱛᱮ",
+  appName:"᱅ᱩᱚᱠ ᱨᱟᱹᱞᱮ",tagline:"ᱢᱮᱞ ᱨᱟᱹᱞᱮᱭᱟᱜ ᱥᱚ ᱠᱚ ᱢᱮᱞ ᱛᱮ",
   welcome:"ᱥᱟᱜᱟᱣ",setupTitle:"ᱟᱞᱚᱨ ᱧᱤᱡᱚᱜ ᱢᱮ",setupDesc:"ᱥᱚ ᱠᱚ ᱟᱞᱚᱨ ᱵᱟᱨᱚᱜ ᱮᱠᱚᱨᱚᱜ ᱢᱮ.",
   nameLabel:"ᱟᱞᱚᱨ ᱧᱤᱡᱚᱜ",namePlaceholder:"ᱨᱟᱢᱮᱥ ᱠᱩᱢᱟᱨ",villageLabel:"ᱟᱞᱚᱨ ᱜᱟᱱᱚ",
   villagePlaceholder:"ᱥᱮᱪᱟᱹᱨᱚᱪᱚᱨ",cropLabel:"ᱟᱞᱚᱨ ᱪᱟᱱᱚᱜᱚᱱᱚᱜ?",

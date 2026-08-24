@@ -1,5 +1,5 @@
 export default {
-  appName:"कृति सहायक",tagline:"गोबर थिनाय गोबर सुविधा लागिब मन नांगौ",welcome:"आबी थिनाय",
+  appName:"अन्नदाता",tagline:"गोबर थिनाय गोबर सुविधा लागिब मन नांगौ",welcome:"आबी थिनाय",
   setupTitle:"नों गोसोंयार बनाय",setupDesc:"नों गोसोंयार सानाकै हाबर फै बिजय लागिब सुविधा लागो।",
   nameLabel:"नों गारियार",namePlaceholder:"जेने रमेश कुमार",villageLabel:"नों बिलाय",
   villagePlaceholder:"जेने शेखपुरा",cropLabel:"नों केय साबोनाय?",

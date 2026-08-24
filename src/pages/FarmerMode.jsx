@@ -5,6 +5,7 @@ import LanguagePicker from "../components/LanguagePicker"
 import { addFarmer } from "../lib/store"
 import { useLanguage } from "../lib/LanguageContext"
 import { useTranslation } from "../lib/useTranslation"
+import { isSpeechInputSupported } from "../lib/languages"
 
 function VoiceButton({ onResult, className = "" }) {
   const { lang } = useLanguage()
@@ -13,9 +14,10 @@ function VoiceButton({ onResult, className = "" }) {
   const recRef = useRef(null)
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition
   const { t } = useTranslation()
+  const supported = isSpeechInputSupported(lang)
 
   const toggle = () => {
-    if (!SR) { setUnsupported(true); return }
+    if (!SR || !supported) { setUnsupported(true); return }
     if (listening) { recRef.current?.stop(); return }
     const r = new SR()
     r.lang = lang
@@ -26,6 +28,14 @@ function VoiceButton({ onResult, className = "" }) {
     recRef.current = r
     setListening(true)
     r.start()
+  }
+
+  if (!supported) {
+    return (
+      <button type="button" className={`btn btn-lg btn-disabled ${className}`} disabled>
+        {t("voiceNotSupported")}
+      </button>
+    )
   }
 
   return (

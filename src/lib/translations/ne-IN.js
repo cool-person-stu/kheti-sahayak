@@ -1,5 +1,5 @@
 export default {
-  appName:"कृति सहायक",tagline:"हर किसानलाई हर सुविधा पाउनुपर्छ",welcome:"स्वागत छ",
+  appName:"अन्नदाता",tagline:"हर किसानलाई हर सुविधा पाउनुपर्छ",welcome:"स्वागत छ",
   setupTitle:"आफ्नो प्रोफाइल सेट गर्नुहोस्",setupDesc:"हामीलाई आफ्नो बारेमा भन्नुहोस् ताकि सही सुविधा खोज्न सकौं।",
   nameLabel:"तपाईंको नाम",namePlaceholder:"जस्तै रमेश कुमार",villageLabel:"तपाईंको गाउँ",
   villagePlaceholder:"जस्तै शेखपुरा",cropLabel:"तपाईंले के खेती गर्नुहुन्छ?",

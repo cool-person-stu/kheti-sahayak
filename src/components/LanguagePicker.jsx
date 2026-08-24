@@ -14,11 +14,19 @@ export default function LanguagePicker({ className = "" }) {
         value={lang}
         onChange={(e) => setLang(e.target.value)}
       >
-        {LANGUAGES.map((l) => (
-          <option key={l.code} value={l.code}>
-            {l.native} — {l.name}
-          </option>
-        ))}
+        {LANGUAGES.map((l) => {
+          const hasVoice = l.speechInput || l.speechOutput
+          const voiceLabel = !l.speechInput && !l.speechOutput
+            ? " (text only)"
+            : !l.speechInput
+            ? " (read aloud only)"
+            : ""
+          return (
+            <option key={l.code} value={l.code}>
+              {l.native} — {l.name}{voiceLabel}
+            </option>
+          )
+        })}
       </select>
     </div>
   )

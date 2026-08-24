@@ -1,5 +1,5 @@
 export default {
-  appName:"ಕೃತಿ ಸಹಾಯಕ",tagline:"ಪ್ರತಿ ರೈತರಿಗೂ ಪ್ರತಿ ಸೌಲಭ್ಯವೂ ಸಿಗಬೇಕು",welcome:"ಸ್ವಾಗತ",
+  appName:"ಅನ್ನದಾತ",tagline:"ಪ್ರತಿ ರೈತರಿಗೂ ಪ್ರತಿ ಸೌಲಭ್ಯವೂ ಸಿಗಬೇಕು",welcome:"ಸ್ವಾಗತ",
   setupTitle:"ನಿಮ್ಮ ಪ್ರೊಫೈಲ್ ಸೆಟ್ ಮಾಡಿ",setupDesc:"ನಿಮ್ಮ ಬಗ್ಗೆ ನಮಗೆ ತಿಳಿಸಿ, ಸರಿಯಾದ ಸೌಲಭ್ಯಗಳನ್ನು ಹುಡುಕಬಹುದು.",
   nameLabel:"ನಿಮ್ಮ ಹೆಸರು",namePlaceholder:"ಉದಾ. ರಮೇಶ್ ಕುಮಾರ್",villageLabel:"ನಿಮ್ಮ ಗ್ರಾಮ",
   villagePlaceholder:"ಉದಾ. ಶೇಖ್‌ಪುರಾ",cropLabel:"ನೀವು ಏನು ಬೆಳೆಯುತ್ತೀರಿ?",

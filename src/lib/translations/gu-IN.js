@@ -1,5 +1,5 @@
 export default {
-  appName:"કૃતિ સહાયક",tagline:"દરેક ખેડૂતને દરેક સુવિધા મળવી જોઈએ",welcome:"સ્વાગત છે",
+  appName:"અન્નદાતા",tagline:"દરેક ખેડૂતને દરેક સુવિધા મળવી જોઈએ",welcome:"સ્વાગત છે",
   setupTitle:"તમારી પ્રોફાઈલ સેટ કરો",setupDesc:"અમને તમારા વિશે જણાવો જેથી યોગ્ય સુવિધાઓ શોધી શકીએ.",
   nameLabel:"તમારું નામ",namePlaceholder:"દા.ત. રમેશ કુમાર",villageLabel:"તમારું ગામ",
   villagePlaceholder:"દા.ત. શેખપુરા",cropLabel:"તમે શું ઉગાડો છો?",

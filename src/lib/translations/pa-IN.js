@@ -1,5 +1,5 @@
 export default {
-  appName:"ਕ੍ਰਿਤੀ ਸਹਾਇਕ",tagline:"ਹਰ ਕਿਸਾਨ ਨੂੰ ਹਰ ਸੁਵਿਧਾ ਮਿਲਣੀ ਚਾਹੀਦੀ ਹੈ",welcome:"ਜੀ ਆਇਆਂ ਨੂੰ",
+  appName:"ਅੰਨਦਾਤਾ",tagline:"ਹਰ ਕਿਸਾਨ ਨੂੰ ਹਰ ਸੁਵਿਧਾ ਮਿਲਣੀ ਚਾਹੀਦੀ ਹੈ",welcome:"ਜੀ ਆਇਆਂ ਨੂੰ",
   setupTitle:"ਆਪਣੀ ਪ੍ਰੋਫਾਈਲ ਸੈੱਟ ਕਰੋ",setupDesc:"ਸਾਨੂੰ ਆਪਣੇ ਬਾਰੇ ਦੱਸੋ ਤਾਂ ਜੋ ਸਹੀ ਸੁਵਿਧਾਵਾਂ ਲੱਭ ਸਕੀਏ।",
   nameLabel:"ਤੁਹਾਡਾ ਨਾਮ",namePlaceholder:"ਜਿਵੇਂ ਰਮੇਸ਼ ਕੁਮਾਰ",villageLabel:"ਤੁਹਾਡਾ ਪਿੰਡ",
   villagePlaceholder:"ਜਿਵੇਂ ਸ਼ੇਖਪੁਰਾ",cropLabel:"ਤੁਸੀਂ ਕੀ ਉਗਾਉਂਦੇ ਹੋ?",
