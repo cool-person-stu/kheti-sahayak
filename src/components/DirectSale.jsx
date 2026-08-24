@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { getPhotos } from "../lib/store"
+import { useTranslation } from "../lib/useTranslation"
 
 const LISTINGS_KEY = "kh_listings_v1"
 
@@ -23,6 +24,7 @@ function removeListing(id) {
 }
 
 export default function DirectSale({ farmerId, farmerName, farmerCrop, farmerVillage }) {
+  const { t } = useTranslation()
   const [listings, setListings] = useState(getListings)
   const [showForm, setShowForm] = useState(false)
   const [crop, setCrop] = useState(farmerCrop || "")
@@ -68,17 +70,17 @@ export default function DirectSale({ farmerId, farmerName, farmerCrop, farmerVil
         <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor" aria-hidden="true">
           <path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6V5Z" />
         </svg>
-        {showForm ? "Cancel" : "List harvest for sale"}
+        {showForm ? t("cancel") : t("listHarvest")}
       </button>
 
       {showForm && (
         <div className="card bg-base-200/60 p-4 space-y-3">
           <p className="text-sm text-base-content/70">
-            Post this farmer's harvest so real buyers can find it.
+            {t("postHarvestDesc")}
           </p>
           <div className="grid grid-cols-2 gap-3">
             <label className="form-control col-span-2 sm:col-span-1">
-              <span className="label-text text-xs font-semibold">Crop</span>
+              <span className="label-text text-xs font-semibold">{t("crop")}</span>
               <input
                 className="input input-bordered input-sm"
                 value={crop}
@@ -86,45 +88,45 @@ export default function DirectSale({ farmerId, farmerName, farmerCrop, farmerVil
               />
             </label>
             <label className="form-control col-span-2 sm:col-span-1">
-              <span className="label-text text-xs font-semibold">Quantity</span>
+              <span className="label-text text-xs font-semibold">{t("quantity")}</span>
               <input
                 type="number"
                 className="input input-bordered input-sm"
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value)}
-                placeholder="e.g. 50"
+                placeholder={t("enterQuantity")}
               />
             </label>
             <label className="form-control col-span-2 sm:col-span-1">
-              <span className="label-text text-xs font-semibold">Unit</span>
+              <span className="label-text text-xs font-semibold">{t("unit")}</span>
               <select className="select select-bordered select-sm" value={unit} onChange={(e) => setUnit(e.target.value)}>
-                <option>quintal</option>
-                <option>kg</option>
-                <option>tonne</option>
+                <option>{t("quintal")}</option>
+                <option>{t("kg")}</option>
+                <option>{t("tonne")}</option>
               </select>
             </label>
             <label className="form-control col-span-2 sm:col-span-1">
-              <span className="label-text text-xs font-semibold">Asking price (₹ per {unit})</span>
+              <span className="label-text text-xs font-semibold">{t("askingPricePerUnit", { unit })}</span>
               <input
                 type="number"
                 className="input input-bordered input-sm"
                 value={askingPrice}
                 onChange={(e) => setAskingPrice(e.target.value)}
-                placeholder="optional"
+                placeholder={t("optional")}
               />
             </label>
           </div>
           <label className="form-control w-full">
-            <span className="label-text text-xs font-semibold">Notes for buyers</span>
+            <span className="label-text text-xs font-semibold">{t("notes")}</span>
             <textarea
               className="textarea textarea-bordered textarea-sm"
               value={notes}
               onChange={(e) => setNotes(e.target.value)}
-              placeholder="e.g. Fresh harvest, good quality, need pickup..."
+              placeholder={t("notesPlaceholder")}
             />
           </label>
           <button className="btn btn-primary btn-sm" onClick={handlePublish}>
-            Publish listing
+            {t("publishListing")}
           </button>
         </div>
       )}
@@ -132,7 +134,7 @@ export default function DirectSale({ farmerId, farmerName, farmerCrop, farmerVil
       <div className="space-y-2">
         {listings.length === 0 ? (
           <p className="text-sm text-base-content/50 text-center">
-            No harvest listed yet. Publish one above to connect with buyers directly.
+            {t("noHarvestListed")}
           </p>
         ) : (
           listings.map((l) => (
@@ -165,7 +167,7 @@ export default function DirectSale({ farmerId, farmerName, farmerCrop, farmerVil
                     className="btn btn-ghost btn-xs text-error"
                     onClick={() => handleRemove(l.id)}
                   >
-                    Remove
+                    {t("remove")}
                   </button>
                 )}
               </div>

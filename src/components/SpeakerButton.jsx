@@ -1,9 +1,12 @@
 import { useState } from "react"
 import { useLanguage } from "../lib/LanguageContext"
+import { useTranslation } from "../lib/useTranslation"
 
-export default function SpeakerButton({ text, label = "Read aloud", className = "" }) {
+export default function SpeakerButton({ text, label, className = "" }) {
   const { lang } = useLanguage()
+  const { t } = useTranslation()
   const [speaking, setSpeaking] = useState(false)
+  const btnLabel = label || t("readAloud")
 
   const speak = () => {
     if (!("speechSynthesis" in window)) return
@@ -31,7 +34,7 @@ export default function SpeakerButton({ text, label = "Read aloud", className = 
       <svg viewBox="0 0 24 24" className="w-4 h-4" fill="currentColor" aria-hidden="true">
         <path d="M3 9v6h4l5 5V4L7 9H3Zm13.5 3a4.5 4.5 0 0 0-2.5-4.03v8.05A4.5 4.5 0 0 0 16.5 12Zm-2.5 7.53v2.04A6.5 6.5 0 0 0 19 12 6.5 6.5 0 0 0 14 4.43v2.04A4.5 4.5 0 0 1 17 12a4.5 4.5 0 0 1-3 4.53Z" />
       </svg>
-      {label}
+      {btnLabel}
     </button>
   )
 }

@@ -1,8 +1,10 @@
 import { useState } from "react"
 import { getCropPricing } from "../lib/store"
 import { getMSP, getMandiPrices } from "../lib/mandi"
+import { useTranslation } from "../lib/useTranslation"
 
 export default function PriceComparison({ farmerId, farmerCrop }) {
+  const { t } = useTranslation()
   const pricing = getCropPricing(farmerId)
   const msp = getMSP(farmerCrop)
   const mandi = getMandiPrices(farmerCrop)
@@ -14,37 +16,37 @@ export default function PriceComparison({ farmerId, farmerCrop }) {
   if (!farmerCrop) {
     return (
       <div className="rounded-box bg-base-200 p-4 text-sm text-base-content/60">
-        Add the farmer's crop to see price comparisons.
+        {t("addCropForComparison")}
       </div>
     )
   }
 
   const rows = [
     msp && {
-      label: "Government MSP (floor price)",
+      label: t("govtMsp"),
       value: msp,
       color: "text-primary",
-      note: "No buyer should pay less",
+      note: t("noBuyerShouldPay"),
     },
     avgMandi && {
-      label: "Average mandi price",
+      label: t("avgMandiPrice"),
       value: avgMandi,
       color: "text-info",
-      note: `From ${mandi.length} markets`,
+      note: t("fromMarkets", { count: mandi.length }),
     },
     pricing?.estimatedValue &&
       pricing.quantity > 0 && {
-        label: "Your estimated value",
+        label: t("yourEstValue"),
         value: Math.round(pricing.estimatedValue / pricing.quantity),
         color: "text-success",
-        note: `${pricing.cropType} × ${pricing.quantity} ${pricing.unit || "kg"}`,
+        note: `${pricing.cropType} × ${pricing.quantity} ${pricing.unit || t("kg")}`,
       },
   ].filter(Boolean)
 
   if (rows.length === 0) {
     return (
       <div className="rounded-box bg-base-200 p-4 text-sm text-base-content/60">
-        No pricing data yet. Use the crop calculator or check mandi prices above.
+        {t("noPricingData")}
       </div>
     )
   }
@@ -67,11 +69,11 @@ export default function PriceComparison({ farmerId, farmerCrop }) {
         <div className="rounded-box bg-warning/10 border border-warning/30 p-3 text-sm">
           {avgMandi < msp ? (
             <p className="text-warning-content font-semibold">
-              Current mandi average (₹{avgMandi}) is below MSP (₹{msp}). The farmer should insist on MSP or wait.
+              {t("mandiBelowMsp", { avgMandi, msp })}
             </p>
           ) : (
             <p className="text-base-content/80">
-              Current mandi average (₹{avgMandi}) is above MSP (₹{msp}). Good time to sell.
+              {t("mandiAboveMsp", { avgMandi, msp })}
             </p>
           )}
         </div>

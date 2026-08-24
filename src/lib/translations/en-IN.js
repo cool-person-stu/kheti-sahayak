@@ -127,5 +127,69 @@ export default {
   fDroneName: "Drone Spraying Subsidy",
   fDroneBenefit: "Grant for renting crop-spraying drones",
   fDroneWhat: "You can hire a drone to spray your crop at a much cheaper price because the government covers part of the cost.",
-  fDroneNext: "Check with your agriculture officer or a drone service provider in your area for subsidy-eligible bookings."
+  fDroneNext: "Check with your agriculture officer or a drone service provider in your area for subsidy-eligible bookings.",
+
+  backToApp: "Back to app",
+  detailsSavedMsg: "Done! Your details are saved.",
+  nameFromVillageCrop: "{name} from {village} — {crop}",
+
+  cropType: "Crop type",
+  enterQuantity: "e.g. 500",
+  kg: "kg",
+  quintal: "quintal",
+  tonne: "tonne",
+  quality: "Quality",
+  premium: "Premium",
+  belowAverage: "Below average",
+  enterCropName: "Enter crop name",
+  estimatedValue: "Estimated market value",
+  enterQuantityToCalculate: "Enter quantity to calculate",
+  basedOnRate: "Based on {crop} at ₹{rate}/kg · {quality} quality",
+  estimateDisclaimer: "This is an estimate. Actual price depends on market, location, and buyer.",
+  saveCalculation: "Save this calculation",
+
+  postHarvestDesc: "Post this farmer's harvest so real buyers can find it.",
+  askingPricePerUnit: "Asking price (₹ per {unit})",
+  optional: "optional",
+  notesPlaceholder: "e.g. Fresh harvest, good quality, need pickup...",
+  noHarvestListed: "No harvest listed yet. Publish one above to connect with buyers directly.",
+  remove: "Remove",
+
+  connectWeather: "Connect live weather data (free)",
+  getApiKeyDesc: "Get a free API key from",
+  takesMinute: "takes 1 minute, no card",
+  weatherError: "Could not fetch weather. Check your API key.",
+  humidity: "Humidity",
+  wind: "Wind",
+  rain: "Rain",
+
+  addCropForComparison: "Add the farmer's crop to see price comparisons.",
+  govtMsp: "Government MSP (floor price)",
+  noBuyerShouldPay: "No buyer should pay less",
+  avgMandiPrice: "Average mandi price",
+  fromMarkets: "From {count} markets",
+  yourEstValue: "Your estimated value",
+  noPricingData: "No pricing data yet. Use the crop calculator or check mandi prices above.",
+  mandiBelowMsp: "Current mandi average (₹{avgMandi}) is below MSP (₹{msp}). The farmer should insist on MSP or wait.",
+  mandiAboveMsp: "Current mandi average (₹{avgMandi}) is above MSP (₹{msp}). Good time to sell.",
+
+  market: "Market",
+  state: "State",
+  pricePerQuintal: "Price/quintal",
+
+  pickOne: "— pick one —",
+  saveEnvData: "Save environmental data",
+
+  tapPhoto: "Tap to take or choose a photo",
+  savePhoto: "Save photo",
+  noPhotos: "No photos yet. Upload one to start building a record of this farmer's harvests.",
+  deletePhoto: "Delete photo",
+
+  farmLocation: "Farm location",
+  noLocationRecorded: "No location recorded. Add GPS when adding the farmer to see the satellite map.",
+
+  listen: "Listen",
+  speakToFill: "Speak to fill this",
+  uploadPhotosDesc: "Upload photos of your harvest for record.",
+  resetProfileBtn: "Reset profile"
 }

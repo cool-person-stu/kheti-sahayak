@@ -1,8 +1,10 @@
 import { useState, useRef } from "react"
 import { useLanguage } from "../lib/LanguageContext"
+import { useTranslation } from "../lib/useTranslation"
 
 export default function VoiceInput({ onResult, className = "" }) {
   const { lang } = useLanguage()
+  const { t } = useTranslation()
   const [listening, setListening] = useState(false)
   const [unsupported, setUnsupported] = useState(false)
   const recognitionRef = useRef(null)
@@ -35,8 +37,8 @@ export default function VoiceInput({ onResult, className = "" }) {
       type="button"
       className={`btn btn-circle btn-sm ${listening ? "btn-error animate-pulse" : "btn-secondary"} ${className}`}
       onClick={start}
-      title="Speak to fill this"
-      aria-label="Speak to fill this"
+      title={t("speakToFill")}
+      aria-label={t("speakToFill")}
     >
       {unsupported ? (
         <span className="text-xs font-bold">?</span>

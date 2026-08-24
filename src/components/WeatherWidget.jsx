@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react"
 import { fetchWeather, getApiKey, setApiKey } from "../lib/weather"
+import { useTranslation } from "../lib/useTranslation"
 
 export default function WeatherWidget({ lat, lng }) {
+  const { t } = useTranslation()
   const [weather, setWeather] = useState(null)
   const [loading, setLoading] = useState(false)
   const [apiKey, setApiKeyState] = useState(getApiKey())
@@ -26,10 +28,10 @@ export default function WeatherWidget({ lat, lng }) {
     return (
       <div className="rounded-box bg-base-200 p-4 text-sm">
         <p className="font-semibold text-base-content/80 mb-2">
-          Connect live weather data (free)
+          {t("connectWeather")}
         </p>
         <p className="text-base-content/60 mb-3">
-          Get a free API key from{" "}
+          {t("enterApiKey")}{" "}
           <a
             href="https://openweathermap.org/api"
             target="_blank"
@@ -38,12 +40,12 @@ export default function WeatherWidget({ lat, lng }) {
           >
             openweathermap.org
           </a>{" "}
-          (takes 1 minute, no card needed), then paste it here:
+          ({t("takesMinute")}), {t("pasteApiKey").toLowerCase()}:
         </p>
         <div className="flex gap-2">
           <input
             className="input input-bordered input-sm flex-1"
-            placeholder="Paste your free API key"
+            placeholder={t("pasteApiKey")}
             onKeyDown={(e) => {
               if (e.key === "Enter" && e.target.value.trim()) saveKey(e.target.value.trim())
             }}
@@ -55,7 +57,7 @@ export default function WeatherWidget({ lat, lng }) {
               if (input.value.trim()) saveKey(input.value.trim())
             }}
           >
-            Save
+            {t("save")}
           </button>
         </div>
       </div>
@@ -65,7 +67,7 @@ export default function WeatherWidget({ lat, lng }) {
   if (loading) {
     return (
       <div className="rounded-box bg-base-200 p-4 text-sm text-base-content/60 animate-pulse">
-        Fetching weather...
+        {t("fetchingWeather")}
       </div>
     )
   }
@@ -73,7 +75,7 @@ export default function WeatherWidget({ lat, lng }) {
   if (!weather) {
     return (
       <div className="rounded-box bg-base-200 p-4 text-sm text-base-content/60">
-        Could not fetch weather. Check your API key.
+        {t("weatherError")}
       </div>
     )
   }
@@ -95,9 +97,9 @@ export default function WeatherWidget({ lat, lng }) {
           </p>
         </div>
         <div className="ml-auto text-right text-sm text-base-content/70">
-          <p>Humidity: {weather.humidity}%</p>
-          <p>Wind: {weather.windSpeed} km/h</p>
-          {weather.rainfall > 0 && <p>Rain: {weather.rainfall} mm</p>}
+          <p>{t("humidity")}: {weather.humidity}%</p>
+          <p>{t("wind")}: {weather.windSpeed} km/h</p>
+          {weather.rainfall > 0 && <p>{t("rain")}: {weather.rainfall} mm</p>}
         </div>
       </div>
     </div>

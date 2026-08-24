@@ -1,6 +1,8 @@
 import { getMandiPrices, getMSP } from "../lib/mandi"
+import { useTranslation } from "../lib/useTranslation"
 
 export default function MandiPrices({ crop }) {
+  const { t } = useTranslation()
   const prices = getMandiPrices(crop)
   const msp = getMSP(crop)
 
@@ -13,13 +15,13 @@ export default function MandiPrices({ crop }) {
           </div>
           <div>
             <p className="text-xs text-base-content/60">
-              Government Minimum Support Price
+              {t("govtFloor")}
             </p>
             <p className="font-display font-bold text-primary">
-              ₹{msp.toLocaleString("en-IN")}/quintal
+              ₹{msp.toLocaleString("en-IN")}/{t("quintal")}
             </p>
             <p className="text-xs text-base-content/60">
-              No buyer should pay less than this.
+              {t("noBuyerLess")}
             </p>
           </div>
         </div>
@@ -29,9 +31,9 @@ export default function MandiPrices({ crop }) {
         <table className="table table-sm">
           <thead>
             <tr className="text-xs text-base-content/60">
-              <th>Market</th>
-              <th>State</th>
-              <th className="text-right">Price/quintal</th>
+              <th>{t("market")}</th>
+              <th>{t("state")}</th>
+              <th className="text-right">{t("pricePerQuintal")}</th>
             </tr>
           </thead>
           <tbody>
@@ -49,7 +51,7 @@ export default function MandiPrices({ crop }) {
       </div>
 
       <p className="text-xs text-base-content/50">
-        Prices are indicative and change daily. For live prices, check{" "}
+        {t("indicative")} {t("livePrices")}{" "}
         <a
           href="https://agmarknet.gov.in"
           target="_blank"

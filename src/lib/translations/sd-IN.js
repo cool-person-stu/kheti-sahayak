@@ -79,5 +79,69 @@ export default {
   fDroneName:"ڊرون اسپريڊ سبسڊي",
   fDroneBenefit:"فصل اسپريڊ ڊرون کرايي لاءِ گراؽنٽ",
   fDroneWhat:"حڪومت خرچ جو هڪ حصو ڪور ڪندي آهي ڇو ته توھي ٻهت سست قيمت تي ڊرون کرايي هيل پنھنج فصل تي اسپري ڪري سگھيو آهي.",
-  fDroneNext:"پنھنج علیقھي جي زراعي افسر يا ڊرون سروس فراهم ڪندڙ سان سبسڊيڊ جوڳي بکنگن باري ۾ ڏس بحثال ڪريو."
+  fDroneNext:"پنھنج علیقھي جي زراعي افسر يا ڊرون سروس فراهم ڪندڙ سان سبسڊيڊ جوڳي بکنگن باري ۾ ڏس بحثال ڪريو.",
+
+  backToApp: "ايپ ڏانهن واپس",
+  detailsSavedMsg: "ٿي ويو! توھان جون تفصيلون محفوظ ٿي ويون.",
+  nameFromVillageCrop: "{village} مان {name} — {crop}",
+
+  cropType: "فصل جو قسم",
+  enterQuantity: "مثال طور 500",
+  kg: "ڪلو",
+  quintal: "ڪوئنٽل",
+  tonne: "ٽن",
+  quality: "معيار",
+  premium: "بهترين",
+  belowAverage: "اوسط کان گھٹ",
+  enterCropName: "فصل جو نالو لکو",
+  estimatedValue: "اندازي مارڪيٽ قيمت",
+  enterQuantityToCalculate: "ڳڻپ لاءِ مقدار لکو",
+  basedOnRate: "{crop} تي ₹{rate}/ڪلي جي بنياد تي · {quality} معيار",
+  estimateDisclaimer: "هي اندازو آهي. اصل قيمت مارڪيٽ، مقام ۽ خريدار تي منحصر آهي.",
+  saveCalculation: "هي حساب محفوظ ڪريو",
+
+  postHarvestDesc: "هن ڪسان جو فصل پوسٽ ڪريو ته حقيقي خريدار ان کي ڳولي سگهن.",
+  askingPricePerUnit: "مانگ قيمت (₹ في {unit})",
+  optional: "اختياري",
+  notesPlaceholder: "مثال طور: تازو فصل، سٺو معيار، پک وٺڻ جي ضرورت...",
+  noHarvestListed: "اڄ تائين ڪوبه فصل درج نه آهي. خريدارن سان سڌي رابطي لاءِ مٿي هڪ شايع ڪريو.",
+  remove: "هٽايو",
+
+  connectWeather: "لايف موسم ڊيٽا ڳنڍيو (مفت)",
+  getApiKeyDesc: "مفت API چابي هتان حاصل ڪريو",
+  takesMinute: "1 منٽ لڳندو، ڪارڊ نه",
+  weatherError: "موسم نه ملي سگهيو. پنهنجي API چابي جانچيو.",
+  humidity: "نمي",
+  wind: "واءُ",
+  rain: "مينهن",
+
+  addCropForComparison: "قيمت جي ڀيٽ ڏسڻ لاءِ ڪسان جو فصل شامل ڪريو.",
+  govtMsp: "حڪومتي MSP (گھٽ ۾ گھٹ قيمت)",
+  noBuyerShouldPay: "ڪوبه خريدار ان کان گھٽ نه ڏئي",
+  avgMandiPrice: "اوسط منڊي قيمت",
+  fromMarkets: "{count} مارڪيٽن مان",
+  yourEstValue: "توھان جي اندازي قيمت",
+  noPricingData: "اڄ تائين قيمت ڊيٽا ناهي. فصل ڪيڪوليٽر استعمال ڪريو يا مٿي منڊي قيمتون ڏسو.",
+  mandiBelowMsp: "هاڻوڪي منڊي اوسط (₹{avgMandi}) MSP (₹{msp}) کان گھٽ آهي. ڪسان کي MSP تي اصرار ڪرڻ گھرجي يا انتظار ڪري.",
+  mandiAboveMsp: "هاڻوڪي منڊي اوسط (₹{avgMandi}) MSP (₹{msp}) کان وڌيڪ آهي. وڪڻڻ جو سٺو وقت آهي.",
+
+  market: "مارڪيٽ",
+  state: "رياست",
+  pricePerQuintal: "في ڪوئنٽل قيمت",
+
+  pickOne: "— هڪ چونڊيو —",
+  saveEnvData: "ماحولياتي ڊيٽا محفوظ ڪريو",
+
+  tapPhoto: "تصوير کڻڻ يا چونڊڻ لاءِ ٽيپ ڪريو",
+  savePhoto: "تصوير محفوظ ڪريو",
+  noPhotos: "اڄ تائين ڪا به تصوير ناهي. هن ڪسان جي فصلن جو رڪارڊ ٺاهڻ لاءِ هڪ اپلوڊ ڪريو.",
+  deletePhoto: "تصوير ختم ڪريو",
+
+  farmLocation: "کيت جو مقام",
+  noLocationRecorded: "ڪوبه مقام رڪارڊ نه ٿيو. سيٽلائيٽ نقشو ڏسڻ لاءِ ڪسان شامل ڪرڻ وقت GPS شامل ڪريو.",
+
+  listen: "ٻڌو",
+  speakToFill: "هي ڀرڻ لاءِ ڳالهايو",
+  uploadPhotosDesc: "رڪارڊ لاءِ پنهنجي فصل جون تصويرون اپلوڊ ڪريو.",
+  resetProfileBtn: "پروفائل ري سيٽ ڪريو"
 }

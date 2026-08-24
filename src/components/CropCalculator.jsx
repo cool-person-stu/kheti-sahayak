@@ -1,7 +1,9 @@
 import { useState } from "react"
 import { CROP_RATES, getCropPricing, saveCropPricing } from "../lib/store"
+import { useTranslation } from "../lib/useTranslation"
 
 export default function CropCalculator({ farmerId, defaultCrop }) {
+  const { t } = useTranslation()
   const saved = getCropPricing(farmerId)
   const [cropType, setCropType] = useState(saved?.cropType || defaultCrop || "Wheat")
   const [otherCrop, setOtherCrop] = useState(saved?.otherCrop || "")
@@ -29,7 +31,7 @@ export default function CropCalculator({ farmerId, defaultCrop }) {
       <div className="grid grid-cols-2 gap-3">
         <label className="form-control col-span-2 sm:col-span-1">
           <span className="label">
-            <span className="label-text text-xs font-semibold">Crop type</span>
+            <span className="label-text text-xs font-semibold">{t("cropType")}</span>
           </span>
           <select
             className="select select-bordered select-sm"
@@ -44,45 +46,45 @@ export default function CropCalculator({ farmerId, defaultCrop }) {
 
         <label className="form-control col-span-2 sm:col-span-1">
           <span className="label">
-            <span className="label-text text-xs font-semibold">Quantity</span>
+            <span className="label-text text-xs font-semibold">{t("quantity")}</span>
           </span>
           <input
             type="number"
             className="input input-bordered input-sm"
             value={quantity}
             onChange={(e) => setQuantity(e.target.value)}
-            placeholder="e.g. 500"
+            placeholder={t("enterQuantity")}
           />
         </label>
 
         <label className="form-control col-span-2 sm:col-span-1">
           <span className="label">
-            <span className="label-text text-xs font-semibold">Unit</span>
+            <span className="label-text text-xs font-semibold">{t("unit")}</span>
           </span>
           <select
             className="select select-bordered select-sm"
             value={unit}
             onChange={(e) => setUnit(e.target.value)}
           >
-            <option>kg</option>
-            <option>quintal</option>
-            <option>tonne</option>
+            <option>{t("kg")}</option>
+            <option>{t("quintal")}</option>
+            <option>{t("tonne")}</option>
           </select>
         </label>
 
         <label className="form-control col-span-2 sm:col-span-1">
           <span className="label">
-            <span className="label-text text-xs font-semibold">Quality</span>
+            <span className="label-text text-xs font-semibold">{t("quality")}</span>
           </span>
           <select
             className="select select-bordered select-sm"
             value={quality}
             onChange={(e) => setQuality(e.target.value)}
           >
-            <option>Premium</option>
-            <option>Good</option>
-            <option>Average</option>
-            <option>Below average</option>
+            <option>{t("premium")}</option>
+            <option>{t("good")}</option>
+            <option>{t("average")}</option>
+            <option>{t("belowAverage")}</option>
           </select>
         </label>
       </div>
@@ -92,29 +94,29 @@ export default function CropCalculator({ farmerId, defaultCrop }) {
           className="input input-bordered input-sm w-full"
           value={otherCrop}
           onChange={(e) => setOtherCrop(e.target.value)}
-          placeholder="Enter crop name"
+          placeholder={t("enterCropName")}
         />
       )}
 
       <div className="rounded-box bg-primary/10 border border-primary/30 p-4">
         <p className="text-xs font-bold uppercase tracking-wide text-base-content/60">
-          Estimated market value
+          {t("estimatedValue")}
         </p>
         <p className="text-3xl font-display font-extrabold text-primary mt-1">
           {value > 0
             ? `₹${value.toLocaleString("en-IN")}`
-            : "Enter quantity to calculate"}
+            : t("enterQuantityToCalculate")}
         </p>
         <p className="text-xs text-base-content/60 mt-1">
-          Based on {cropType !== "Other (enter below)" ? cropType : otherCrop} at ₹{rate}/kg &middot; {quality} quality
+          {t("basedOnRate", { crop: cropType !== "Other (enter below)" ? cropType : otherCrop, rate, quality })}
         </p>
         <p className="text-xs text-base-content/50 mt-1">
-          This is an estimate. Actual price depends on market, location, and buyer.
+          {t("estimateDisclaimer")}
         </p>
       </div>
 
       <button className="btn btn-primary btn-sm" onClick={handleSave}>
-        Save this calculation
+        {t("saveCalculation")}
       </button>
     </div>
   )

@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react"
+import { useTranslation } from "../lib/useTranslation"
 
 export default function SatelliteMap({ lat, lng, farmerName }) {
+  const { t } = useTranslation()
   const mapRef = useRef(null)
   const [loaded, setLoaded] = useState(false)
 
@@ -54,7 +56,7 @@ export default function SatelliteMap({ lat, lng, farmerName }) {
 
         L.marker([lat, lng])
           .addTo(map)
-          .bindPopup(farmerName || "Farm location")
+          .bindPopup(farmerName || t("farmLocation"))
           .openPopup()
 
         setLoaded(true)
@@ -64,12 +66,12 @@ export default function SatelliteMap({ lat, lng, farmerName }) {
     }
 
     init()
-  }, [lat, lng, farmerName, loaded])
+  }, [lat, lng, farmerName, loaded, t])
 
   if (!lat || !lng) {
     return (
       <div className="rounded-box bg-base-200 p-6 text-center text-sm text-base-content/60">
-        No location recorded. Add GPS when adding the farmer to see the satellite map.
+        {t("noLocationRecorded")}
       </div>
     )
   }

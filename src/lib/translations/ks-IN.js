@@ -79,5 +79,69 @@ export default {
   fDroneName:"ڈرون اسپرے سبسڈی",
   fDroneBenefit:"فصل اسپرے ڈرون کرائے کے لیے گرانٹ",
   fDroneWhat:"حکومت لاگت کا ایک حصہ کور کرتی ہے اس لیے آپ بہت سستی قیمت پر ڈرون کرایا لے کر اپنی فصل پر اسپرے کر سکتے ہیں۔",
-  fDroneNext:"اپنے علاقے میں زرعی افسر یا ڈرون سروس فراہم کنندہ سے سبسڈی کے قابل بکنگز کے بارے میں پوچھیں۔"
+  fDroneNext:"اپنے علاقے میں زرعی افسر یا ڈرون سروس فراہم کنندہ سے سبسڈی کے قابل بکنگز کے بارے میں پوچھیں۔",
+
+  backToApp: "ایپہ واپس",
+  detailsSavedMsg: "ٹھیک چھے! تۆہندی تفصیلات محفوظ گأمی۔",
+  nameFromVillageCrop: "{village} گامُک {name} — {crop}",
+
+  cropType: "فصلُک قسم",
+  enterQuantity: "مثلاً 500",
+  kg: "کلو",
+  quintal: "کوینٹل",
+  tonne: "ٹن",
+  quality: "معیار",
+  premium: "بہترین",
+  belowAverage: "اوسطس کھۆتہٕ",
+  enterCropName: "فصلُک ناو لیکھیو",
+  estimatedValue: "أندازٕ مارکیٹ قیمت",
+  enterQuantityToCalculate: "حساب خأطرٕ مقدار لیکھیو",
+  basedOnRate: "{crop} پؠٹھ ₹{rate}/کلو کس بنیادس پؠٹھ · {quality} معیار",
+  estimateDisclaimer: "یہ چھ أنداز۔ اصل قیمت بازار، مقام تہٕ خریدارس پؠٹھ مند چھے۔",
+  saveCalculation: "یہ حساب محفوظ کٔریو",
+
+  postHarvestDesc: "یم کسان سند فصل پوسٹ کٔریو تاکہ حقیقی خریدار یہ ژھانڈن۔",
+  askingPricePerUnit: "مانگ قیمت (₹ فی {unit})",
+  optional: "اختیاری",
+  notesPlaceholder: "مثلاً: تاز فصل، چھوئ معیار، پک اپ ضرورت...",
+  noHarvestListed: "ابہ تام چھ نہ کانہہ فصل درج۔ خریدارن سٟتؠ براہ راست رابطہ خأطرٕ کُپر اَکھ شایع کٔریو۔",
+  remove: "ہٹٲیو",
+
+  connectWeather: "براہ راست موسم ڈیٹا رلٲویو (مفت)",
+  getApiKeyDesc: "مفت API کلید یتھہٕ پیٹھ حٲصل کٔریو",
+  takesMinute: "اک منٹ لگان، کارڈ نہ",
+  weatherError: "موسم نہ میل۔ پنن API کلید چیک کٔریو۔",
+  humidity: "نمی",
+  wind: "ہوا",
+  rain: "بارش",
+
+  addCropForComparison: "قیمت موازنہ وُچھنہٕ خأطرٕ کسان سند فصل شأمل کٔریو۔",
+  govtMsp: "سرکٲری MSP (کم ترین قیمت)",
+  noBuyerShouldPay: "کانہہ خریدار یس کھۆتہٕ دِیہِ",
+  avgMandiPrice: "اوسط منڈی قیمت",
+  fromMarkets: "{count} بازارن مِٹہٕ",
+  yourEstValue: "تۆہند أندازٕ قیمت",
+  noPricingData: "ابہ تام چھ نہ قیمت ڈیٹا۔ فصل کیلکولیٹر ورتِیو یا کُپر منڈی قیمتن وُچھِیو۔",
+  mandiBelowMsp: "أمس منڈی اوسط (₹{avgMandi}) چھ MSP (₹{msp}) کھۆتہٕ۔ کسانس گژھہِ MSP پؠٹھ زور دِن یا تماش کٔرِتھ۔",
+  mandiAboveMsp: "أمس منڈی اوسط (₹{avgMandi}) چھ MSP (₹{msp}) نش زیٛادٕ۔ ویچنہٕ خأطرٕ چھ سۄنہٕ وقت۔",
+
+  market: "بازار",
+  state: "ریاست",
+  pricePerQuintal: "فی کوینٹل قیمت",
+
+  pickOne: "— اَکھ ژھارِو —",
+  saveEnvData: "ماحولیاتی ڈیٹا محفوظ کٔریو",
+
+  tapPhoto: "فوٹو کڈنس یا ژھارنس خأطرٕ ٹیپ کٔریو",
+  savePhoto: "فوٹو محفوظ کٔریو",
+  noPhotos: "ابہ تام چھ نہ کانہہ فوٹو۔ امہہ کسان سند فصلس ریکارڑ بناونہٕ خأطرٕ اَکھ اپلوڈ کٔریو۔",
+  deletePhoto: "فوٹو مِٹٲیو",
+
+  farmLocation: "کھیتُک مقام",
+  noLocationRecorded: "کانہہ مقام ریکارڑ نہ گأمُت۔ سیٹلائٹ نقشن وُچھنہٕ خأطرٕ کسان دِتھ ویزان GPS دِیو۔",
+
+  listen: "أنوو",
+  speakToFill: "یہ پُر کرنس خأطرٕ بولِیو",
+  uploadPhotosDesc: "ریکارڑ خأطرٕ پننس فصلُک فوٹو اپلوڈ کٔریو۔",
+  resetProfileBtn: "پروفائل ری سیٹ کٔریو"
 }

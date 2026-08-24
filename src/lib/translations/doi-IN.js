@@ -79,5 +79,69 @@ export default {
   fDroneName:"ड्रोन स्प्रेइंग सब्सिडी",
   fDroneBenefit:"फसल स्प्रेइंग ड्रोन किराए लई ग्रांट",
   fDroneWhat:"सरकार लागत दा इक हिस्सा कभर करदी है इस लई तुसीं बहुत घट कीमत च ड्रोन किराए च लै के आपनी फसल च स्प्रे कर सकदे हो।",
-  fDroneNext:"आपने खेतर च खेती अधिकारी जां ड्रोन सेवा प्रदाता नाल सब्सिडी-योग्य बुकिंगा बारे जांच करो।"
+  fDroneNext:"आपने खेतर च खेती अधिकारी जां ड्रोन सेवा प्रदाता नाल सब्सिडी-योग्य बुकिंगा बारे जांच करो।",
+
+  backToApp: "ऐप दे अंदर वापस जाओ",
+  detailsSavedMsg: "हो ग्या! थां दी जानकारी सेव होई।",
+  nameFromVillageCrop: "{village} दा {name} — {crop}",
+
+  cropType: "फसल दी किस्म",
+  enterQuantity: "जिवैं 500",
+  kg: "किलो",
+  quintal: "क्विंटल",
+  tonne: "टन",
+  quality: "गुणवत्ता",
+  premium: "उम्दा",
+  belowAverage: "औसत तों घट",
+  enterCropName: "फसल दा नाँव लिखो",
+  estimatedValue: "अनुमानित बाज़ार कीमत",
+  enterQuantityToCalculate: "हिसाब लई मात्रा लिखो",
+  basedOnRate: "{crop} च ₹{rate}/किलो दे आधार ते · {quality} गुणवत्ता",
+  estimateDisclaimer: "ए अंदाज़ ऐ। सच्ची कीमत बाज़ार, थां ते खरीददार पर निर्भर करदी ऐ।",
+  saveCalculation: "ए हिसाब सेव करो",
+
+  postHarvestDesc: "ए किसान दी फसल प्रकाशित करो तां जे सच्चे खरीददार इसनूं लब्भ सकन।",
+  askingPricePerUnit: "माग कीमत (₹ प्रति {unit})",
+  optional: "वैकल्पिक",
+  notesPlaceholder: "जिवैं: ताज़ी फसल, वधिया गुणवत्ता, पिकअप दी लोड़...",
+  noHarvestListed: "अज्जै तक कोई फसल लिस्ट नहीं। खरीददारां नाल सिधे जुड़न लई उत्तें इक प्रकाशित करो।",
+  remove: "हटाओ",
+
+  connectWeather: "लाइव मौसम डाटा जोड़ो (मुफ़्त)",
+  getApiKeyDesc: "मुफ़्त API कुंजी एह्थों ल्यो",
+  takesMinute: "1 मिनट लगदा, कार्ड नहीं",
+  weatherError: "मौसम नहीं मिल्या। अपनी API कुंजी जांचो।",
+  humidity: "नमी",
+  wind: "हवा",
+  rain: "मींह",
+
+  addCropForComparison: "कीमत तुलना देखन लई किसान दी फसल जोड़ो।",
+  govtMsp: "सरकारी MSP (घट्ट-घट्ट कीमत)",
+  noBuyerShouldPay: "कोई खरीददार एस तों घट ना देवे",
+  avgMandiPrice: "औसत मंडी कीमत",
+  fromMarkets: "{count} बाज़ारां तों",
+  yourEstValue: "थां दा अनुमानित मूल्य",
+  noPricingData: "अज्जै तक कीमत डाटा नहीं। फसल कैलकुलेटर वरतो जां उत्तें मंडी भाव देखो।",
+  mandiBelowMsp: "अज्जै दी मंडी औसत (₹{avgMandi}) MSP (₹{msp}) तों घट ऐ। किसान नै MSP पर ज़ोर देणा चाहीदा ऐ जां इंतज़ार करना चाहीदा ऐ।",
+  mandiAboveMsp: "अज्जै दी मंडी औसत (₹{avgMandi}) MSP (₹{msp}) तों बढ्डी ऐ। वेचन लई वधिया वेला ऐ।",
+
+  market: "बाज़ार",
+  state: "राज्य",
+  pricePerQuintal: "प्रति क्विंटल कीमत",
+
+  pickOne: "— इक चुणो —",
+  saveEnvData: "माहौली डाटा सेव करो",
+
+  tapPhoto: "फोटो खिंचन जां चुणन लई टैप करो",
+  savePhoto: "फोटो सेव करो",
+  noPhotos: "अज्जै तक कोई फोटो नहीं। ए किसान दी फसलां दा रिकॉर्ड बणान लई इक अपलोड करो।",
+  deletePhoto: "फोटो मिटाओ",
+
+  farmLocation: "खेत दा टिकाणा",
+  noLocationRecorded: "कोई स्थान दर्ज नहीं होया। सैटेलाइट नक्शा देखन लई किसान जोड़दें वेले GPS जोड़ो।",
+
+  listen: "सुणो",
+  speakToFill: "ए भरन लई बोलो",
+  uploadPhotosDesc: "रिकॉर्ड लई अपनी फसल दी तस्वीरें अपलोड करो।",
+  resetProfileBtn: "प्रोफाइल रीसेट करो"
 }

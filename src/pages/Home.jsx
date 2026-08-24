@@ -188,7 +188,7 @@ function SmartTab({ farmer, onRefresh }) {
   return (
     <div className="space-y-4">
       <AudioText text={t("smartMatch")} as="h2" className="font-display text-2xl font-bold text-neutral" />
-      <p className="text-base-content/70">{t("smartMatchFor")}: {farmer.crop || "your crop"}</p>
+      <p className="text-base-content/70">{t("smartMatchFor")}: {farmer.crop || t("yourCrop")}</p>
 
       <div className="space-y-3">
         {FACILITIES.map((f) => (
@@ -346,7 +346,7 @@ function FarmerHome({ farmer, onReset }) {
             <div className="card bg-base-100 border border-base-content/10 shadow-sm">
               <div className="card-body p-5">
                 <AudioText text={t("harvestPhotos")} as="h3" className="font-display font-bold text-neutral" />
-                <p className="text-sm text-base-content/70">Upload photos of your harvest for record.</p>
+                <p className="text-sm text-base-content/70">{t("uploadPhotosDesc")}</p>
               </div>
             </div>
           </div>
@@ -371,7 +371,7 @@ function FarmerHome({ farmer, onReset }) {
             </div>
           </div>
 
-          <button className="btn btn-ghost btn-sm text-base-content/50" onClick={onReset}>Reset profile</button>
+          <button className="btn btn-ghost btn-sm text-base-content/50" onClick={onReset}>{t("resetProfileBtn")}</button>
         </div>
       )}
 

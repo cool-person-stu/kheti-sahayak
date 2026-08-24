@@ -79,5 +79,69 @@ export default {
   fDroneName:"ڈرون اسپرے سبسڈی",
   fDroneBenefit:"فصل اسپرے ڈرون کرائے کے لیے گرانٹ",
   fDroneWhat:"حکومت لاگت کا ایک حصہ کور کرتی ہے اس لیے آپ بہت سستی قیمت پر ڈرون کرایا لے کر اپنی فصل پر اسپرے کر سکتے ہیں۔",
-  fDroneNext:"اپنے علاقے میں زرعی افسر یا ڈرون سروس فراہم کنندہ سے سبسڈی کے قابل بکنگز کے بارے میں پوچھیں۔"
+  fDroneNext:"اپنے علاقے میں زرعی افسر یا ڈرون سروس فراہم کنندہ سے سبسڈی کے قابل بکنگز کے بارے میں پوچھیں۔",
+
+  backToApp: "ایپ پر واپس جائیں",
+  detailsSavedMsg: "ہو گیا! آپ کی معلومات محفوظ ہو گئیں۔",
+  nameFromVillageCrop: "{name}، {village} — {crop}",
+
+  cropType: "فصل کی قسم",
+  enterQuantity: "جیسے 500",
+  kg: "کلو",
+  quintal: "کوانٹل",
+  tonne: "ٹن",
+  quality: "معیار",
+  premium: "اعلیٰ",
+  belowAverage: "اوسط سے کم",
+  enterCropName: "فصل کا نام لکھیں",
+  estimatedValue: "اندازہ بازار قیمت",
+  enterQuantityToCalculate: "حساب کے لیے مقدار لکھیں",
+  basedOnRate: "{crop} ₹{rate}/کلو · {quality} معیار کی بنیاد پر",
+  estimateDisclaimer: "یہ ایک اندازہ ہے۔ اصل قیمت بازار، مقام اور خریدار پر منحصر ہے۔",
+  saveCalculation: "یہ حساب محفوظ کریں",
+
+  postHarvestDesc: "اس کسان کی فصل شائع کریں تاکہ حقیقی خریدار اسے تلاش کر سکیں۔",
+  askingPricePerUnit: "مانگ قیمت (₹ فی {unit})",
+  optional: "اختیاری",
+  notesPlaceholder: "جیسے تازہ فصل، اچھا معیار، پک اپ چاہیے...",
+  noHarvestListed: "ابھی تک کوئی فصل فہرست میں نہیں۔ خریداروں سے براہ راست رابطے کے لیے اوپر ایک شائع کریں۔",
+  remove: "ہٹائیں",
+
+  connectWeather: "لائیو موسم ڈیٹا جوڑیں (مفت)",
+  getApiKeyDesc: "یہاں سے مفت API کلید حاصل کریں",
+  takesMinute: "1 منٹ لگتا ہے، کارڈ نہیں",
+  weatherError: "موسم حاصل نہیں ہو سکا۔ اپنی API کلید چیک کریں۔",
+  humidity: "نمی",
+  wind: "ہوا",
+  rain: "بارش",
+
+  addCropForComparison: "قیمت کے موازنے کے لیے کسان کی فصل شامل کریں۔",
+  govtMsp: "سرکاری MSP (کم از کم قیمت)",
+  noBuyerShouldPay: "کوئی خریدار اس سے کم نہ دے",
+  avgMandiPrice: "اوسط منڈی قیمت",
+  fromMarkets: "{count} بازاروں سے",
+  yourEstValue: "آپ کا اندازہ شدہ قیمت",
+  noPricingData: "ابھی تک کوئی قیمتی ڈیٹا نہیں۔ فصل کیلکولیٹر استعمال کریں یا اوپر منڈی قیمتیں دیکھیں۔",
+  mandiBelowMsp: "موجودہ منڈی اوسط (₹{avgMandi}) MSP (₹{msp}) سے کم ہے۔ کسان کو MSP پر اصرار کرنا چاہیے یا انتظار کرنا چاہیے۔",
+  mandiAboveMsp: "موجودہ منڈی اوسط (₹{avgMandi}) MSP (₹{msp}) سے زیادہ ہے۔ بیچنے کا اچھا وقت ہے۔",
+
+  market: "بازار",
+  state: "صوبہ",
+  pricePerQuintal: "فی کوانٹل قیمت",
+
+  pickOne: "— ایک منتخب کریں —",
+  saveEnvData: "ماحولاتی ڈیٹا محفوظ کریں",
+
+  tapPhoto: "تصویر لینے یا منتخب کرنے کے لیے ٹیپ کریں",
+  savePhoto: "تصویر محفوظ کریں",
+  noPhotos: "ابھی تک کوئی تصویر نہیں۔ اس کسان کی فصل کا ریکارڈ بنانے کے لیے ایک اپلوڈ کریں۔",
+  deletePhoto: "تصویر حذف کریں",
+
+  farmLocation: "کھیت کا مقام",
+  noLocationRecorded: "کوئی مقام ریکارڈ نہیں۔ سیٹلائٹ نقشہ دیکھنے کے لیے کسان شامل کرتے وقت GPS شامل کریں۔",
+
+  listen: "سنیں",
+  speakToFill: "اسے بھرنے کے لیے بولیں",
+  uploadPhotosDesc: "ریکارڈ کے لیے اپنی فصل کی تصاویر اپلوڈ کریں۔",
+  resetProfileBtn: "پروفائل ری سیٹ کریں"
 }

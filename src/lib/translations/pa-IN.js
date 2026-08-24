@@ -80,5 +80,69 @@ export default {
   fDroneName:"ਡ੍ਰੋਨ ਸਪ੍ਰੇਇੰਗ ਸਬਸਿਡੀ",
   fDroneBenefit:"ਫ਼ਸਲ ਸਪ੍ਰੇਇੰਗ ਡ੍ਰੋਨ ਕਿਰਾਏ ਲਈ ਗ੍ਰਾਂਟ",
   fDroneWhat:"ਸਰਕਾਰ ਲਾਗਤ ਦਾ ਇੱਕ ਹਿੱਸਾ ਕਵਰ ਕਰਦੀ ਹੈ ਇਸ ਲਈ ਤੁਸੀਂ ਬਹੁਤ ਘੱਟ ਕੀਮਤ 'ਤੇ ਡ੍ਰੋਨ ਕਿਰਾਏ 'ਤੇ ਲੈ ਕੇ ਆਪਣੀ ਫ਼ਸਲ 'ਤੇ ਸਪ੍ਰੇ ਕਰ ਸਕਦੇ ਹੋ।",
-  fDroneNext:"ਆਪਣੇ ਖੇਤਰ ਵਿੱਚ ਖੇਤੀ ਅਧਿਕਾਰੀ ਜਾਂ ਡ੍ਰੋਨ ਸੇਵਾ ਪ੍ਰਦਾਤਾ ਨਾਲ ਸਬਸਿਡੀ-ਯੋਗ ਬੁੱਕਿੰਗਾਂ ਬਾਰੇ ਜਾਂਚ ਕਰੋ।"
+  fDroneNext:"ਆਪਣੇ ਖੇਤਰ ਵਿੱਚ ਖੇਤੀ ਅਧਿਕਾਰੀ ਜਾਂ ਡ੍ਰੋਨ ਸੇਵਾ ਪ੍ਰਦਾਤਾ ਨਾਲ ਸਬਸਿਡੀ-ਯੋਗ ਬੁੱਕਿੰਗਾਂ ਬਾਰੇ ਜਾਂਚ ਕਰੋ।",
+
+  backToApp: "ਐਪ 'ਤੇ ਵਾਪਸ ਜਾਓ",
+  detailsSavedMsg: "ਹੋ ਗਿਆ! ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਸੰਭਾਲ ਲਈ ਗਈ।",
+  nameFromVillageCrop: "{name}, {village} — {crop}",
+
+  cropType: "ਫ਼ਸਲ ਦੀ ਕਿਸਮ",
+  enterQuantity: "ਜਿਵੇਂ 500",
+  kg: "ਕਿਲੋ",
+  quintal: "ਕਵਿੰਟਲ",
+  tonne: "ਟਨ",
+  quality: "ਗੁਣਵੱਤਾ",
+  premium: "ਵਧੀਆ",
+  belowAverage: "ਔਸਤ ਤੋਂ ਘੱਟ",
+  enterCropName: "ਫ਼ਸਲ ਦਾ ਨਾਮ ਲਿਖੋ",
+  estimatedValue: "ਅੰਦਾਜ਼ਨ ਮੰਡੀ ਮੁੱਲ",
+  enterQuantityToCalculate: "ਗਿਣਤੀ ਕਰਨ ਲਈ ਮਾਤਰਾ ਲਿਖੋ",
+  basedOnRate: "{crop} ₹{rate}/ਕਿਲੋ · {quality} ਗੁਣਵੱਤਾ ਦੇ ਅਧਾਰ 'ਤੇ",
+  estimateDisclaimer: "ਇਹ ਸਿਰਫ਼ ਅੰਦਾਜ਼ਾ ਹੈ। ਅਸਲ ਕੀਮਤ ਮੰਡੀ, ਥਾਂ ਅਤੇ ਖਰੀਦਦਾਰ 'ਤੇ ਨਿਰਭਰ ਕਰਦੀ ਹੈ।",
+  saveCalculation: "ਇਹ ਗਿਣਤੀ ਸੰਭਾਲੋ",
+
+  postHarvestDesc: "ਇਸ ਕਿਸਾਨ ਦੀ ਫ਼ਸਲ ਪ੍ਰਕਾਸ਼ਿਤ ਕਰੋ ਤਾਂ ਜੋ ਅਸਲੀ ਖਰੀਦਦਾਰ ਉਸਨੂੰ ਲੱਭ ਸਕਣ।",
+  askingPricePerUnit: "ਮੰਗ ਕੀਮਤ (₹ ਪ੍ਰਤੀ {unit})",
+  optional: "ਚੋਣਵਾਂ",
+  notesPlaceholder: "ਜਿਵੇਂ ਤਾਜ਼ੀ ਫ਼ਸਲ, ਵਧੀਆ ਗੁਣਵੱਤਾ, ਪਿਕਅੱਪ ਚਾਹੀਦੀ ਹੈ...",
+  noHarvestListed: "ਹਾਲੇ ਕੋਈ ਫ਼ਸਲ ਲਿਸਟ ਨਹੀਂ ਹੋਈ। ਖਰੀਦਦਾਰਾਂ ਨਾਲ ਸਿੱਧੇ ਜੁੜਨ ਲਈ ਉੱਪਰ ਇੱਕ ਪ੍ਰਕਾਸ਼ਿਤ ਕਰੋ।",
+  remove: "ਹਟਾਓ",
+
+  connectWeather: "ਲਾਈਵ ਮੌਸਮ ਡਾਟਾ ਜੋੜੋ (ਮੁਫ਼ਤ)",
+  getApiKeyDesc: "ਇੱਥੋਂ ਮੁਫ਼ਤ API ਕੁੰਜੀ ਲਓ",
+  takesMinute: "1 ਮਿੰਟ ਲੱਗਦਾ ਹੈ, ਕਾਰਡ ਨਹੀਂ",
+  weatherError: "ਮੌਸਮ ਨਹੀਂ ਮਿਲਿਆ। ਆਪਣੀ API ਕੁੰਜੀ ਜਾਂਚੋ।",
+  humidity: "ਨਮੀ",
+  wind: "ਹਵਾ",
+  rain: "ਬਰਸਾਤ",
+
+  addCropForComparison: "ਕੀਮਤ ਤੁਲਨਾ ਵੇਖਣ ਲਈ ਕਿਸਾਨ ਦੀ ਫ਼ਸਲ ਜੋੜੋ।",
+  govtMsp: "ਸਰਕਾਰੀ MSP (ਘੱਟੋ-ਘੱਟ ਕੀਮਤ)",
+  noBuyerShouldPay: "ਕੋਈ ਖਰੀਦਦਾਰ ਇਸ ਤੋਂ ਘੱਟ ਨਾ ਦੇਵੇ",
+  avgMandiPrice: "ਔਸਤ ਮੰਡੀ ਕੀਮਤ",
+  fromMarkets: "{count} ਮੰਡੀਆਂ ਤੋਂ",
+  yourEstValue: "ਤੁਹਾਡਾ ਅੰਦਾਜ਼ਨ ਮੁੱਲ",
+  noPricingData: "ਹਾਲੇ ਕੋਈ ਕੀਮਤ ਡਾਟਾ ਨਹੀਂ। ਫ਼ਸਲ ਕੈਲਕੁਲੇਟਰ ਵਰਤੋ ਜਾਂ ਉੱਪਰ ਮੰਡੀ ਭਾਅ ਵੇਖੋ।",
+  mandiBelowMsp: "ਮੌਜੂਦਾ ਮੰਡੀ ਔਸਤ (₹{avgMandi}) MSP (₹{msp}) ਤੋਂ ਘੱਟ ਹੈ। ਕਿਸਾਨ ਨੂੰ MSP 'ਤੇ ਜ਼ੋਰ ਦੇਣਾ ਚਾਹੀਦਾ ਹੈ ਜਾਂ ਉਡੀਕ ਕਰਨੀ ਚਾਹੀਦੀ ਹੈ।",
+  mandiAboveMsp: "ਮੌਜੂਦਾ ਮੰਡੀ ਔਸਤ (₹{avgMandi}) MSP (₹{msp}) ਤੋਂ ਵੱਧ ਹੈ। ਵੇਚਣ ਦਾ ਵਧੀਆ ਸਮਾਂ ਹੈ।",
+
+  market: "ਮੰਡੀ",
+  state: "ਸੂਬਾ",
+  pricePerQuintal: "ਪ੍ਰਤੀ ਕਵਿੰਟਲ ਕੀਮਤ",
+
+  pickOne: "— ਇੱਕ ਚੁਣੋ —",
+  saveEnvData: "ਵਾਤਾਵਰਨ ਡਾਟਾ ਸੰਭਾਲੋ",
+
+  tapPhoto: "ਤਸਵੀਰ ਖਿੱਚਣ ਜਾਂ ਚੁਣਨ ਲਈ ਟੈਪ ਕਰੋ",
+  savePhoto: "ਤਸਵੀਰ ਸੰਭਾਲੋ",
+  noPhotos: "ਹਾਲੇ ਕੋਈ ਤਸਵੀਰ ਨਹੀਂ। ਇਸ ਕਿਸਾਨ ਦੀ ਫ਼ਸਲ ਦਾ ਰਿਕਾਰਡ ਬਣਾਉਣ ਲਈ ਇੱਕ ਅੱਪਲੋਡ ਕਰੋ।",
+  deletePhoto: "ਤਸਵੀਰ ਮਿਟਾਓ",
+
+  farmLocation: "ਖੇਤ ਦਾ ਟਿਕਾਣਾ",
+  noLocationRecorded: "ਕੋਈ ਟਿਕਾਣਾ ਰਿਕਾਰਡ ਨਹੀਂ। ਸੈਟਲਾਈਟ ਨਕਸ਼ਾ ਵੇਖਣ ਲਈ ਕਿਸਾਨ ਜੋੜਦੇ ਸਮੇਂ GPS ਜੋੜੋ।",
+
+  listen: "ਸੁਣੋ",
+  speakToFill: "ਇਹ ਭਰਨ ਲਈ ਬੋਲੋ",
+  uploadPhotosDesc: "ਰਿਕਾਰਡ ਲਈ ਆਪਣੀ ਫ਼ਸਲ ਦੀਆਂ ਤਸਵੀਰਾਂ ਅੱਪਲੋਡ ਕਰੋ।",
+  resetProfileBtn: "ਪ੍ਰੋਫਾਈਲ ਰੀਸੈੱਟ ਕਰੋ"
 }

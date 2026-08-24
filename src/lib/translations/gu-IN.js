@@ -79,5 +79,69 @@ export default {
   fDroneName:"ડ્રોન સ્પ્રેઇંગ સબ્સિડી",
   fDroneBenefit:"પાક સ્પ્રેઇંગ ડ્રોન ભાડા માટે ગ્રાન્ટ",
   fDroneWhat:"સરકાર ખર્ચનો એક ભાગ કવર કરે છે તેથી તમે ખૂબ ઓછી કિંમતે ડ્રોન ભાડે લઈને તમારા પાક પર સ્પ્રે કરી શકો છો.",
-  fDroneNext:"તમારા વિસ્તારમાં કૃષિ અધિકારી અથવા ડ્રોન સેવા પ્રદાતા સાથે સબ્સિડી-લાયક બુકિંગ વિશે તપાસો."
+  fDroneNext:"તમારા વિસ્તારમાં કૃષિ અધિકારી અથવા ડ્રોન સેવા પ્રદાતા સાથે સબ્સિડી-લાયક બુકિંગ વિશે તપાસો.",
+
+  backToApp:"એપ પર પાછા જાઓ",
+  detailsSavedMsg:"થઈ ગયું! તમારી માહિતી સાચવાઈ.",
+  nameFromVillageCrop:"{name}, {village} — {crop}",
+
+  cropType:"પાકનો પ્રકાર",
+  enterQuantity:"દા.ત. 500",
+  kg:"કિલો",
+  quintal:"ક્વિન્ટલ",
+  tonne:"ટન",
+  quality:"ગુણવત્તા",
+  premium:"પ્રીમિયમ",
+  belowAverage:"સરેરાશ કરતાં ઓછું",
+  enterCropName:"પાકનું નામ દાખલ કરો",
+  estimatedValue:"અંદાજિત બજાર ભાવ",
+  enterQuantityToCalculate:"ગણતરી માટે જથ્થો દાખલ કરો",
+  basedOnRate:"{crop} મુજબ ₹{rate}/કિલો · {quality} ગુણવત્તા",
+  estimateDisclaimer:"આ એક અંદાજ છે. અસલી ભાવ બજાર, સ્થળ અને ખરીદદાર પર આધાર રાખે છે.",
+  saveCalculation:"આ ગણતરી સાચવો",
+
+  postHarvestDesc:"સાચા ખરીદદારો પાક શોધી શકે તે માટે આ ખેડૂતનો પાક પોસ્ટ કરો.",
+  askingPricePerUnit:"માંગ ભાવ (₹ પ્રતિ {unit})",
+  optional:"વૈકલ્પિક",
+  notesPlaceholder:"દા.ત. તાજો પાક, સારી ગુણવત્તા, પિકઅપ જોઈએ...",
+  noHarvestListed:"હજુ કોઈ પાક યાદીમાં નથી. સીધે ખરીદદારો સાથે જોડાવા ઉપર એક પ્રકાશિત કરો.",
+  remove:"દૂર કરો",
+
+  connectWeather:"લાઈવ હવામાન ડેટા કનેક્ટ કરો (મફત)",
+  getApiKeyDesc:"અહીંથી મફત API કી મેળવો",
+  takesMinute:"1 મિનિટ લાગે છે, કાર્ડ નથી",
+  weatherError:"હવામાન મેળવી શકાયું નથી. તમારી API કી તપાસો.",
+  humidity:"ભેજ",
+  wind:"પવન",
+  rain:"વરસાદ",
+
+  addCropForComparison:"ભાવ સરખામણી જોવા ખેડૂતનો પાક ઉમેરો.",
+  govtMsp:"સરકારી MSP (ન્યૂનતમ ભાવ)",
+  noBuyerShouldPay:"કોઈ ખરીદદાર આનાથી ઓછું આપે નહીં",
+  avgMandiPrice:"સરેરાશ બજાર ભાવ",
+  fromMarkets:"{count} બજારોમાંથી",
+  yourEstValue:"તમારો અંદાજિત ભાવ",
+  noPricingData:"હજુ ભાવ ડેટા નથી. પાક કેલ્ક્યુલેટર વાપરો અથવા ઉપર બજાર ભાવ જુઓ.",
+  mandiBelowMsp:"વર્તમાન બજાર સરેરાશ (₹{avgMandi}) MSP (₹{msp}) કરતાં ઓછી છે. ખેડૂતે MSP પર આગ્રહ રાખવો જોઈએ અથવા રાહ જોવી જોઈએ.",
+  mandiAboveMsp:"વર્તમાન બજાર સરેરાશ (₹{avgMandi}) MSP (₹{msp}) કરતાં વધુ છે. વેચાણ માટે સારો સમય.",
+
+  market:"બજાર",
+  state:"રાજ્ય",
+  pricePerQuintal:"ભાવ/ક્વિન્ટલ",
+
+  pickOne:"— એક પસંદ કરો —",
+  saveEnvData:"પર્યાવરણ ડેટા સાચવો",
+
+  tapPhoto:"ફોટો લેવા અથવા પસંદ કરવા ટેપ કરો",
+  savePhoto:"ફોટો સાચવો",
+  noPhotos:"હજુ કોઈ ફોટા નથી. આ ખેડૂતના પાકનો રેકોર્ડ બનાવવા એક અપલોડ કરો.",
+  deletePhoto:"ફોટો કાઢી નાખો",
+
+  farmLocation:"ખેતરનું સ્થાન",
+  noLocationRecorded:"સ્થાન નોંધાયું નથી. ઉપગ્રહ નકશો જોવા ખેડૂત ઉમેરતી વખતે GPS ઉમેરો.",
+
+  listen:"સાંભળો",
+  speakToFill:"બોલીને ભરો",
+  uploadPhotosDesc:"રેકોર્ડ માટે તમારા પાકના ફોટા અપલોડ કરો.",
+  resetProfileBtn:"પ્રોફાઈલ રીસેટ કરો"
 }
