@@ -141,7 +141,7 @@ function FarmerHome() {
 
   const handleRefresh = () => setFarmer(getCurrentUser())
 
-  const handleLogout = () => { logOut(); navigate("/login") }
+  const handleLogout = () => { logOut(); navigate("/") }
 
   const fetchLocation = () => {
     if (!navigator.geolocation) return

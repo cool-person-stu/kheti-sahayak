@@ -221,5 +221,7 @@ export default {
   aiPlaceholder: "Ask me anything about your farm...",
   aiSuggestion1: "What crop should I plant this season?",
   aiSuggestion2: "How is my soil health?",
-  aiSuggestion3: "When should I harvest?"
+  aiSuggestion3: "When should I harvest?",
+  goToDashboard: "Go to Dashboard",
+  landingFooter: "Annadata — empowering every Indian farmer with government benefits, smart tools, AI advice, and direct market access. Built for the villages of India."
 }

@@ -22,7 +22,7 @@ export default function LoginPage() {
     }
     const result = logIn({ name, village, password })
     if (result.error) { setError(result.error); return }
-    navigate("/")
+    navigate("/dashboard")
   }
 
   return (

@@ -33,7 +33,7 @@ export default function SignUpPage() {
     if (step < steps.length - 1) { setStep(step + 1); return }
     const result = signUp({ name, village, crop, landSize, landUnit, phone, password })
     if (result.error) { setError(result.error); return }
-    navigate("/")
+    navigate("/dashboard")
   }
 
   const back = () => { if (step > 0) setStep(step - 1) }
