@@ -229,5 +229,6 @@ export default {
   nearest: "Nearest",
   highestPrice: "Highest Price",
   noMandiFound: "No nearby markets found for this crop",
-  distance: "Distance"
+  distance: "Distance",
+  clearChat: "Clear chat"
 }

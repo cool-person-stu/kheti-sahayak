@@ -62,7 +62,12 @@ export default function AiChat({ farmer }) {
   const { lang } = useLanguage()
   const { t } = useTranslation()
   const langInfo = getLanguage(lang)
-  const [messages, setMessages] = useState([])
+  const [messages, setMessages] = useState(() => {
+    try {
+      const saved = localStorage.getItem(`kh_ai_chat_${farmer.id}`)
+      return saved ? JSON.parse(saved) : []
+    } catch { return [] }
+  })
   const [input, setInput] = useState("")
   const [loading, setLoading] = useState(false)
   const chatEndRef = useRef(null)
@@ -73,6 +78,17 @@ export default function AiChat({ farmer }) {
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }, [messages, loading])
+
+  useEffect(() => {
+    if (messages.length > 0) {
+      localStorage.setItem(`kh_ai_chat_${farmer.id}`, JSON.stringify(messages))
+    }
+  }, [messages, farmer.id])
+
+  const handleClearChat = () => {
+    setMessages([])
+    localStorage.removeItem(`kh_ai_chat_${farmer.id}`)
+  }
 
   const handleSend = async () => {
     if (!input.trim() || loading) return
@@ -121,6 +137,14 @@ export default function AiChat({ farmer }) {
 
   return (
     <div className="flex flex-col h-[60vh]">
+      {messages.length > 0 && (
+        <div className="flex justify-end px-4 pt-2">
+          <button className="btn btn-xs btn-ghost text-base-content/50" onClick={handleClearChat}>
+            <svg viewBox="0 0 24 24" className="w-3 h-3" fill="currentColor"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+            {t("clearChat")}
+          </button>
+        </div>
+      )}
       <div className="flex-1 overflow-y-auto space-y-3 p-4">
         {messages.length === 0 && (
           <div className="text-center py-12">
