@@ -3,6 +3,40 @@ import { useLanguage } from "../lib/LanguageContext"
 import { useTranslation } from "../lib/useTranslation"
 import { isSpeechOutputSupported } from "../lib/languages"
 
+function stripMarkdown(text) {
+  return text
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/`[^`]*`/g, " ")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/#{1,6}\s/g, "")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[|]/g, " ")
+    .replace(/[-]{3,}/g, " ")
+    .replace(/\n{2,}/g, ". ")
+    .replace(/\n/g, " ")
+    .trim()
+}
+
+function findBestVoice(lang) {
+  const voices = window.speechSynthesis?.getVoices() || []
+  if (voices.length === 0) return null
+
+  const langBase = lang.split("-")[0].toLowerCase()
+
+  const exact = voices.find((v) => v.lang === lang)
+  if (exact) return exact
+
+  const startsWith = voices.find((v) => v.lang.startsWith(langBase))
+  if (startsWith) return startsWith
+
+  const langLower = lang.toLowerCase()
+  const partial = voices.find((v) => v.lang.toLowerCase().startsWith(langBase))
+  if (partial) return partial
+
+  return null
+}
+
 export default function SpeakerButton({ text, label, className = "" }) {
   const { lang } = useLanguage()
   const { t } = useTranslation()
@@ -18,9 +52,15 @@ export default function SpeakerButton({ text, label, className = "" }) {
       return
     }
     window.speechSynthesis.cancel()
-    const utterance = new SpeechSynthesisUtterance(text)
+    const cleanText = stripMarkdown(text)
+    if (!cleanText) return
+    const utterance = new SpeechSynthesisUtterance(cleanText)
     utterance.lang = lang
-    utterance.rate = 0.95
+    utterance.rate = 0.9
+
+    const voice = findBestVoice(lang)
+    if (voice) utterance.voice = voice
+
     utterance.onend = () => setSpeaking(false)
     utterance.onerror = () => setSpeaking(false)
     setSpeaking(true)
