@@ -150,5 +150,7 @@ export default {
   nearest: "ويجهو ترين",
   highestPrice: "سڀ کان وڌيڪ قيمت",
   noMandiFound: "هن فصل لاءِ ويجهو ڪا به منڊي نه ملي",
-  distance: "فاصلو"
+  distance: "فاصلو",
+  clearChat: "چيٽ صاف ڪريو",
+  live: "لائيو"
 }

@@ -150,5 +150,7 @@ export default {
   nearest: "سب سے قریبی",
   highestPrice: "سب سے زیادہ قیمت",
   noMandiFound: "اس فصل کے لیے قریب کوئی منڈی نہیں ملی",
-  distance: "فاصلہ"
+  distance: "فاصلہ",
+  clearChat: "چیٹ صاف کریں",
+  live: "لائیو"
 }

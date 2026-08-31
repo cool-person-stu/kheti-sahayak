@@ -151,5 +151,7 @@ export default {
   nearest: "ਸਭ ਤੋਂ ਨੇੜਲੀ",
   highestPrice: "ਸਭ ਤੋਂ ਵੱਧ ਭਾਅ",
   noMandiFound: "ਇਸ ਫ਼ਸਲ ਲਈ ਨੇੜਲੀ ਕੋਈ ਮੰਡੀ ਨਹੀਂ ਮਿਲੀ",
-  distance: "ਦੂਰੀ"
+  distance: "ਦੂਰੀ",
+  clearChat: "ਚੈਟ ਸਾਫ਼ ਕਰੋ",
+  live: "ਲਾਈਵ"
 }

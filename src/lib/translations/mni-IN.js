@@ -110,5 +110,7 @@ export default {
   nearest: "ꯑꯆꯨꯕꯗ",
   highestPrice: "ꯑꯊꯨꯕ ꯗꯥꯝ",
   noMandiFound: "ꯍꯩꯁꯤꯡꯆꯥꯎꯕ ꯄꯥꯝꯕꯤ ꯑꯁꯤꯒꯤꯗꯃꯛ ꯑꯆꯨꯕ ꯏꯄꯨꯡ ꯐꯪꯈꯤꯗꯦ",
-  distance: "ꯃꯔꯨꯝ ꯆꯥꯡ"
+  distance: "ꯃꯔꯨꯝ ꯆꯥꯡ",
+  clearChat: "ꯆꯦꯠ ꯃꯨꯠꯁꯨ",
+  live: "ꯂꯥꯏꯚ"
 }

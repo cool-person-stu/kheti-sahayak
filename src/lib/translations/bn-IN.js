@@ -179,5 +179,7 @@ export default {
   nearest: "নিকটতম",
   highestPrice: "সর্বোচ্চ মূল্য",
   noMandiFound: "এই ফসলের জন্য কাছাকাছি কোনো বাজার পাওয়া যায়নি",
-  distance: "দূরত্ব"
+  distance: "দূরত্ব",
+  clearChat: "চ্যাট মুছুন",
+  live: "লাইভ"
 }

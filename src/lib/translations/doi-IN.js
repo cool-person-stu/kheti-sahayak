@@ -150,5 +150,7 @@ export default {
   nearest: "सब्भनें नेड़े",
   highestPrice: "सब्भनें बड़ा भाव",
   noMandiFound: "इस फसल आस्तै नेड़े कुएई मंडी नेईं मिल्ली",
-  distance: "दूरी"
+  distance: "दूरी",
+  clearChat: "चैट साफ करो",
+  live: "लाइव"
 }

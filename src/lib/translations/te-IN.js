@@ -180,5 +180,7 @@ export default {
   nearest: "సమీపంలోనిది",
   highestPrice: "అత్యధిక ధర",
   noMandiFound: "ఈ పంటకు సమీపంలో మార్కెట్లు కనుగొనబడలేదు",
-  distance: "దూరం"
+  distance: "దూరం",
+  clearChat: "చాట్ తొలగించండి",
+  live: "లైవ్"
 }

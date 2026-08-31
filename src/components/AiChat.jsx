@@ -107,12 +107,24 @@ export default function AiChat({ farmer }) {
       try { weatherData = await fetchWeather(farmer.location.lat, farmer.location.lng) } catch {}
     }
 
+    let livePrices = ""
+    if (farmer.location && farmer.crop) {
+      try {
+        const { findNearbyMandi } = await import("../lib/mandi")
+        const { fetchNearbyMandiPrices, getLivePriceString } = await import("../lib/agmarknet")
+        const nearby = findNearbyMandi(farmer.location.lat, farmer.location.lng, farmer.crop, 300)
+        const live = await fetchNearbyMandiPrices({ nearbyMandis: nearby, crop: farmer.crop })
+        livePrices = getLivePriceString(farmer.crop, live.prices || [])
+      } catch {}
+    }
+    const contextPricing = livePrices || pricingStr
+
     const result = await askAI({
       question,
       farmerData: farmer,
       sensorData,
       weatherData,
-      cropPricing: pricingStr,
+      cropPricing: contextPricing,
       language: langInfo.name,
       chatHistory: messages,
     })

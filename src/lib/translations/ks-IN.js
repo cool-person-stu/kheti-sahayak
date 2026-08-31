@@ -150,5 +150,7 @@ export default {
   nearest: "سارِوے کھۆتہ نزدیک",
   highestPrice: "سارِوے کھۆتہ زیاد قیمت",
   noMandiFound: "اَمی فصلہ باپتھ نزدیکی کانہ منڈی نِہ میل",
-  distance: "دوٗر"
+  distance: "دوٗر",
+  clearChat: "چیٹ صاف کریں",
+  live: "لائیو"
 }

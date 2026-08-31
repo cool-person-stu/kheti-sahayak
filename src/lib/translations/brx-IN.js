@@ -109,5 +109,7 @@ export default {
   nearest: "सब्बै गिबुन",
   highestPrice: "सब्बै गोसार दाम",
   noMandiFound: "बे फिसानि थांबाय गाबग्रां गासैबो मोनाखै",
-  distance: "गोजानसालि"
+  distance: "गोजानसालि",
+  clearChat: "चैट खालाम",
+  live: "लाइव"
 }

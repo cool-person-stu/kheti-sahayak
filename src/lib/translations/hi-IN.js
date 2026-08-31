@@ -228,5 +228,7 @@ export default {
   nearest: "नज़दीकी",
   highestPrice: "सबसे ऊँचा भाव",
   noMandiFound: "इस फसल के लिए पास की कोई मंडी नहीं मिली",
-  distance: "दूरी"
+  distance: "दूरी",
+  clearChat: "चैट साफ़ करें",
+  live: "लाइव"
 }

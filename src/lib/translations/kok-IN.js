@@ -109,5 +109,7 @@ export default {
   nearest: "सगळ्यांत लागींचें",
   highestPrice: "सगळ्यांत वयली किंमत",
   noMandiFound: "ह्या पिकाखातीर लागींचो बाजार मेळ्ळो ना",
-  distance: "अंतर"
+  distance: "अंतर",
+  clearChat: "चॅट काडात",
+  live: "लाइव्ह"
 }

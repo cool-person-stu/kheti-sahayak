@@ -150,5 +150,7 @@ export default {
   nearest: "আটাইতকৈ ওচৰৰ",
   highestPrice: "সৰ্বোচ্চ দাম",
   noMandiFound: "এই শস্যৰ বাবে ওচৰত কোনো বজাৰ পোৱা নগ'ল",
-  distance: "দূৰত্ব"
+  distance: "দূৰত্ব",
+  clearChat: "চেট পৰিষ্কাৰ কৰক",
+  live: "লাইভ"
 }

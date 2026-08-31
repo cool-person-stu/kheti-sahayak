@@ -150,5 +150,7 @@ export default {
   nearest: "ಹತ್ತಿರದ",
   highestPrice: "ಅತಿ ಹೆಚ್ಚಿನ ಬೆಲೆ",
   noMandiFound: "ಈ ಬೆಳೆಗೆ ಹತ್ತಿರದ ಯಾವುದೇ ಮಾರುಕಟ್ಟೆ ಸಿಗಲಿಲ್ಲ",
-  distance: "ದೂರ"
+  distance: "ದೂರ",
+  clearChat: "ಚಾಟ್ ಅಳಿಸಿ",
+  live: "ಲೈವ್"
 }

@@ -150,5 +150,7 @@ export default {
   nearest: "सभसू नजदीक",
   highestPrice: "सभसू बेसी कीमत",
   noMandiFound: "ई फसलक लेल नजदीक कोनो मंडी नै भेटल",
-  distance: "दूरी"
+  distance: "दूरी",
+  clearChat: "चैट साफ करू",
+  live: "लाइव"
 }

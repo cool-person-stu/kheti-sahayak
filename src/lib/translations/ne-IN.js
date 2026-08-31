@@ -150,5 +150,7 @@ export default {
   nearest: "नजिकको",
   highestPrice: "उच्चतम मूल्य",
   noMandiFound: "यो बालीका लागि नजिकै कुनै बजार भेटिएन",
-  distance: "दूरी"
+  distance: "दूरी",
+  clearChat: "च्याट सफा गर्नुहोस्",
+  live: "लाइभ"
 }

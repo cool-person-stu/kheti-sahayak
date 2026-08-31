@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react"
 import { findNearbyMandi } from "../lib/mandi"
-import { fetchNearbyMandiPrices, getFallbackPrices, isAgmarknetConfigured } from "../lib/agmarknet"
+import { fetchNearbyMandiPrices } from "../lib/agmarknet"
 import { useTranslation } from "../lib/useTranslation"
 
 export default function MandiPrices({ crop, farmerLocation }) {
   const { t } = useTranslation()
   const [prices, setPrices] = useState([])
   const [loading, setLoading] = useState(false)
-  const [source, setSource] = useState("")
+  const [error, setError] = useState("")
   const [sortOrder, setSortOrder] = useState("distance")
+  const [lastUpdated, setLastUpdated] = useState("")
 
   useEffect(() => {
     if (!farmerLocation?.lat || !farmerLocation?.lng || !crop) {
@@ -18,38 +19,33 @@ export default function MandiPrices({ crop, farmerLocation }) {
 
     let cancelled = false
     setLoading(true)
+    setError("")
 
     const load = async () => {
       const nearby = findNearbyMandi(farmerLocation.lat, farmerLocation.lng, crop, 300)
-      if (nearby.length === 0) {
-        setPrices([])
-        setLoading(false)
-        return
-      }
 
-      if (isAgmarknetConfigured()) {
-        const result = await fetchNearbyMandiPrices({ nearbyMandis: nearby, crop })
-        if (!cancelled) {
-          setPrices(result.prices || [])
-          setSource(result.source)
-          setLoading(false)
-        }
+      const result = await fetchNearbyMandiPrices({ nearbyMandis: nearby, crop })
+      if (cancelled) return
+
+      if (result.prices && result.prices.length > 0) {
+        const sorted = [...result.prices].sort((a, b) => (a.distance || 0) - (b.distance || 0))
+        setPrices(sorted)
+        const latest = sorted.map((p) => p.date).filter(Boolean).sort().pop()
+        if (latest) setLastUpdated(latest)
       } else {
-        const fallback = getFallbackPrices(nearby, crop)
-        if (!cancelled) {
-          setPrices(fallback)
-          setSource("mock")
-          setLoading(false)
-        }
+        setPrices([])
+        setError(result.error || t("noMandiFound"))
       }
+      setLoading(false)
     }
 
     load()
     return () => { cancelled = true }
-  }, [crop, farmerLocation?.lat, farmerLocation?.lng])
+  }, [crop, farmerLocation?.lat, farmerLocation?.lng, t])
 
   const sorted = [...prices].sort((a, b) => {
     if (sortOrder === "price") return (b.price || 0) - (a.price || 0)
+    if (sortOrder === "deal") return (b.maxPrice || 0) - (a.maxPrice || 0)
     return (a.distance || 0) - (b.distance || 0)
   })
 
@@ -72,7 +68,7 @@ export default function MandiPrices({ crop, farmerLocation }) {
 
   return (
     <div className="space-y-3">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between flex-wrap gap-2">
         <div className="flex gap-1">
           <button
             className={`btn btn-xs ${sortOrder === "distance" ? "btn-primary" : "btn-outline"}`}
@@ -87,11 +83,18 @@ export default function MandiPrices({ crop, farmerLocation }) {
             {t("highestPrice")}
           </button>
         </div>
-        {source && (
-          <span className="text-xs text-base-content/40">
-            {source === "agmarknet" ? "Live" : "Indicative"}
+        <div className="flex items-center gap-2 text-xs">
+          {lastUpdated && (
+            <span className="text-base-content/50">
+              <svg viewBox="0 0 24 24" className="w-3 h-3 inline-block mr-1 text-success" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm-1 5h2v6h-2V7Zm0 8h2v2h-2v-2Z"/></svg>
+              {lastUpdated}
+            </span>
+          )}
+          <span className="badge badge-success badge-sm gap-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-success-content animate-pulse" />
+            {t("live")}
           </span>
-        )}
+        </div>
       </div>
 
       {loading ? (
@@ -100,7 +103,7 @@ export default function MandiPrices({ crop, farmerLocation }) {
         </div>
       ) : sorted.length === 0 ? (
         <div className="text-center py-6 text-base-content/50">
-          <p className="text-sm">{t("noMandiFound")}</p>
+          <p className="text-sm">{error || t("noMandiFound")}</p>
         </div>
       ) : (
         <div className="overflow-x-auto">
@@ -117,10 +120,17 @@ export default function MandiPrices({ crop, farmerLocation }) {
               {sorted.map((p, i) => (
                 <tr key={i} className="hover">
                   <td className="font-medium">{p.market}</td>
-                  <td className="text-base-content/60">{p.distance} km</td>
+                  <td className="text-base-content/60">{p.distance ?? ""} km</td>
                   <td className="text-base-content/70">{p.state}</td>
-                  <td className="text-right font-display font-bold text-primary">
-                    {p.price > 0 ? `₹${p.price.toLocaleString("en-IN")}` : "—"}
+                  <td className="text-right">
+                    <div className="font-display font-bold text-primary">
+                      ₹{p.price ? p.price.toLocaleString("en-IN") : "—"}
+                    </div>
+                    {p.minPrice > 0 && p.maxPrice > 0 && (
+                      <div className="text-[10px] text-base-content/50">
+                        {p.minPrice.toLocaleString("en-IN")} – {p.maxPrice.toLocaleString("en-IN")}
+                      </div>
+                    )}
                   </td>
                 </tr>
               ))}
@@ -129,11 +139,9 @@ export default function MandiPrices({ crop, farmerLocation }) {
         </div>
       )}
 
-      {!isAgmarknetConfigured() && prices.length > 0 && (
-        <p className="text-xs text-base-content/50">
-          Demo prices shown. For live data, configure Agmarknet API key.
-        </p>
-      )}
+      <p className="text-xs text-base-content/50">
+        {t("livePrices")} — Agmarknet / data.gov.in
+      </p>
     </div>
   )
 }

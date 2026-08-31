@@ -149,5 +149,7 @@ export default {
   nearest: "ନିକଟତମ",
   highestPrice: "ସର୍ବୋଚ୍ଚ ମୂଲ୍ୟ",
   noMandiFound: "ଏହି ଫସଲ ପାଇଁ ନିକଟରେ କୌଣସି ବଜାର ମିଳିଲା ନାହିଁ",
-  distance: "ଦୂରତା"
+  distance: "ଦୂରତା",
+  clearChat: "ଚାଟ ସଫା କରନ୍ତୁ",
+  live: "ଲାଇଭ"
 }

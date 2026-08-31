@@ -180,5 +180,7 @@ export default {
   nearest: "सर्वात जवळचे",
   highestPrice: "सर्वोच्च भाव",
   noMandiFound: "या पिकासाठी जवळपास कोणतेही बाजार आढळले नाहीत",
-  distance: "अंतर"
+  distance: "अंतर",
+  clearChat: "चॅट साफ करा",
+  live: "लाइव्ह"
 }

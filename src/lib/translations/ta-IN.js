@@ -181,5 +181,7 @@ export default {
   nearest: "அருகிலுள்ளது",
   highestPrice: "அதிக விலை",
   noMandiFound: "இந்த பயிருக்கு அருகில் எந்த சந்தையும் கிடைக்கவில்லை",
-  distance: "தூரம்"
+  distance: "தூரம்",
+  clearChat: "அரட்டையை அழி",
+  live: "நேரடி"
 }

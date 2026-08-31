@@ -155,5 +155,7 @@ export default {
   nearest: "ഏറ്റവും അടുത്തുള്ളത്",
   highestPrice: "ഏറ്റവും ഉയർന്ന വില",
   noMandiFound: "ഈ വിളയ്ക്കായി അടുത്തുള്ള മാർക്കറ്റുകൾ ഒന്നും കണ്ടെത്തിയില്ല",
-  distance: "ദൂരം"
+  distance: "ദൂരം",
+  clearChat: "ചാറ്റ് മായ്ക്കുക",
+  live: "തത്സമയം"
 }
